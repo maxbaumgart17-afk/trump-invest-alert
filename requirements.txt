@@ -1,1 +1,2 @@
+# Nur nötig, wenn du statt des Abos einen API-Key (ANTHROPIC_API_KEY) nutzt:
 anthropic>=0.90

@@ -21,11 +21,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
-      - run: pip install -r requirements.txt
+      - name: Claude Code installieren (nutzt dein Claude-Abo)
+        run: npm install -g @anthropic-ai/claude-code
       - name: Neue Posts prüfen
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           MIN_RELEVANCE: ${{ vars.MIN_RELEVANCE || '6' }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-haiku-5-5' }}
