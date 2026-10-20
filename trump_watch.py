@@ -151,7 +151,8 @@ def analyze_via_claude_code(content: str) -> Optional[dict]:
         raise TemporaryError(f"Unerwartete Ausgabe: {(proc.stdout or proc.stderr)[:300]}")
     if out.get("is_error"):
         msg = str(out.get("result", ""))
-        if "login" in msg.lower() or "logged in" in msg.lower():
+        low = msg.lower()
+        if "login" in low or "logged in" in low or "401" in low or "authenticate" in low:
             sys.exit(f"Claude Code nicht angemeldet: {msg} (CLAUDE_CODE_OAUTH_TOKEN prüfen)")
         raise TemporaryError(msg[:300])  # z.B. Nutzungslimit erreicht -> später erneut
     result = out.get("structured_output")
