@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "*/5 * * * *"   # alle 5 Minuten (GitHub kann sich um ein paar Minuten verspäten)
   workflow_dispatch:        # manuell starten über den "Run workflow"-Knopf
+    inputs:
+      backfill:
+        description: "Zum Testen: die letzten N Posts erneut bewerten (0 = normal)"
+        default: "0"
 
 permissions:
   contents: write           # um seen.json (bereits gesehene Posts) zu speichern
@@ -29,7 +33,7 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           MIN_RELEVANCE: ${{ vars.MIN_RELEVANCE || '6' }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-haiku-5-5' }}
-        run: python trump_watch.py
+        run: python trump_watch.py --backfill "${{ inputs.backfill || '0' }}"
       - name: Gesehene Posts speichern
         run: |
           git config user.name "trump-watch-bot"
