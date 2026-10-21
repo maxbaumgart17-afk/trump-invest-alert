@@ -240,8 +240,17 @@ def telegram_chat_id(token: str) -> str:
     raise RuntimeError("Telegram: Noch niemand hat dem Bot geschrieben – bitte im Bot auf START tippen.")
 
 
+def telegram_token() -> str:
+    """Token aus dem Secret herausfischen – auch wenn beim Einfügen Leerzeichen oder Text mitgerutscht sind."""
+    raw = os.environ["TELEGRAM_BOT_TOKEN"]
+    match = re.search(r"\d{6,}:[A-Za-z0-9_-]{30,}", re.sub(r"\s", "", raw))
+    if not match:
+        raise RuntimeError(f"Telegram-Token sieht unvollständig aus ({len(raw.strip())} Zeichen) – bitte neu einfügen.")
+    return match.group(0)
+
+
 def send_telegram(title: str, message: str, url: str = ""):
-    token = os.environ["TELEGRAM_BOT_TOKEN"]
+    token = telegram_token()
     text = f"<b>{html.escape(title)}</b>\n\n{html.escape(message)}"[:4000]
     payload = {
         "chat_id": telegram_chat_id(token),
