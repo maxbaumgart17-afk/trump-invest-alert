@@ -10,6 +10,10 @@ on:
       backfill:
         description: "Zum Testen: die letzten N Posts erneut bewerten (0 = normal)"
         default: "0"
+      loop:
+        description: "Dauerbetrieb jetzt starten (prüft jede Minute, ca. 5¾ Std.)"
+        type: boolean
+        default: false
       dryrun:
         description: "Probelauf: bewerten und anzeigen, aber nichts senden"
         type: boolean
@@ -24,7 +28,7 @@ permissions:
 
 concurrency:
   # Dauer-Läufe nacheinander; manuelle Tests laufen unabhängig davon sofort
-  group: trump-watch-${{ github.event_name }}
+  group: trump-watch-${{ (github.event_name == 'schedule' || inputs.loop) && 'loop' || 'manual' }}
   cancel-in-progress: false
 
 jobs:
@@ -50,7 +54,7 @@ jobs:
         run: |
           git config user.name "trump-watch-bot"
           git config user.email "actions@users.noreply.github.com"
-          if [ "${{ github.event_name }}" = "schedule" ]; then
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.loop }}" = "true" ]; then
             python -u trump_watch.py --loop 60 --duration 20700
           elif [ "${{ inputs.test }}" = "true" ]; then
             python trump_watch.py --test
