@@ -10,6 +10,10 @@ on:
       backfill:
         description: "Zum Testen: die letzten N Posts erneut bewerten (0 = normal)"
         default: "0"
+      dryrun:
+        description: "Probelauf: bewerten und anzeigen, aber nichts senden"
+        type: boolean
+        default: false
       test:
         description: "Nur eine Test-Nachricht schicken"
         type: boolean
@@ -50,6 +54,8 @@ jobs:
             python -u trump_watch.py --loop 60 --duration 20700
           elif [ "${{ inputs.test }}" = "true" ]; then
             python trump_watch.py --test
+          elif [ "${{ inputs.dryrun }}" = "true" ]; then
+            python trump_watch.py --dry-run --backfill "${{ inputs.backfill || '0' }}"
           else
             python trump_watch.py --backfill "${{ inputs.backfill || '0' }}"
           fi

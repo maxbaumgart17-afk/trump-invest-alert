@@ -45,6 +45,7 @@ FEED_URL = "https://www.trumpstruth.org/feed"  # öffentliches Archiv aller Trut
 STATE_FILE = Path(__file__).with_name("seen.json")
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
 MIN_RELEVANCE = int(os.environ.get("MIN_RELEVANCE", "6"))
+DRY_RUN = False  # --dry-run: nur bewerten und anzeigen, nichts senden oder speichern
 NTFY_SERVER = os.environ.get("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
 USER_AGENT = "Mozilla/5.0 (trump-invest-alert)"
 
@@ -389,6 +390,8 @@ def notify(post: dict, result: dict) -> bool:
         return False  # kein Wert, der steigen könnte -> keine Meldung
     for line in plain_lines:
         print(f"         {line}")
+    if DRY_RUN:
+        return True
     priority = 5 if result["relevance"] >= 9 else 4
     send_push(title, message, post["url"], priority, html_message=html_msg)
     return True
@@ -403,6 +406,8 @@ def load_seen() -> Optional[List[str]]:
 
 
 def save_seen(seen: List[str]):
+    if DRY_RUN:
+        return
     STATE_FILE.write_text(json.dumps(seen[-1000:], indent=0))
 
 
@@ -459,9 +464,12 @@ def main():
     parser = argparse.ArgumentParser(description="Trump Truth Social -> KI -> Push")
     parser.add_argument("--loop", type=int, metavar="SEK", help="dauerhaft laufen, alle SEK Sekunden prüfen")
     parser.add_argument("--test", action="store_true", help="Test-Push senden")
+    parser.add_argument("--dry-run", action="store_true", help="nur bewerten, nichts senden/speichern")
     parser.add_argument("--duration", type=int, default=0, metavar="SEK", help="mit --loop: nach SEK Sekunden beenden")
     parser.add_argument("--backfill", type=int, default=0, metavar="N", help="die letzten N Posts erneut analysieren")
     args = parser.parse_args()
+    global DRY_RUN
+    DRY_RUN = args.dry_run
 
     if args.test:
         send_push("✅ Trump Invest Alert", "Push funktioniert! Du bekommst ab jetzt Investment-relevante Trump-Posts.")
