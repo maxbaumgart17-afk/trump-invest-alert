@@ -259,7 +259,8 @@ def telegram_token() -> str:
     # Telegram-Tokens: Bot-ID, Doppelpunkt, genau 35 Zeichen – drumherum mitkopierter Text wird ignoriert
     match = re.search(r"(?<![A-Za-z0-9_-])\d{6,}:[A-Za-z0-9_-]{35}(?![A-Za-z0-9_-])", raw)
     if not match:
-        raise RuntimeError(f"Telegram-Token sieht unvollständig aus ({len(raw.strip())} Zeichen) – bitte neu einfügen.")
+        shape = " ".join(f"[{len(c)}{':' if ':' in c else ''}]" for c in raw.split())  # nur Längen, kein Inhalt
+        raise RuntimeError(f"Telegram-Token sieht unvollständig aus ({len(raw.strip())} Zeichen, Aufbau {shape}) – bitte neu einfügen.")
     return match.group(0)
 
 
