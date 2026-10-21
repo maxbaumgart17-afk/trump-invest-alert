@@ -381,6 +381,8 @@ def notify(post: dict, result: dict):
         message += "\n\n💼 Mögliche Werte:\n" + "\n".join(plain_lines)
         html_msg += "\n\n💼 <b>Mögliche Werte</b> (WKN antippen = kopieren):\n" + "\n".join(html_lines)
         html_msg += "\n<i>Keine Anlageberatung.</i>"
+    for line in plain_lines:
+        print(f"         {line}")
     priority = 5 if result["relevance"] >= 9 else 4
     send_push(title, message, post["url"], priority, html_message=html_msg)
 
