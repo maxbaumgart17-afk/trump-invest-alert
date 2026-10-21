@@ -8,6 +8,10 @@ on:
       backfill:
         description: "Zum Testen: die letzten N Posts erneut bewerten (0 = normal)"
         default: "0"
+      test:
+        description: "Nur eine Test-Nachricht schicken"
+        type: boolean
+        default: false
 
 permissions:
   contents: write           # um seen.json (bereits gesehene Posts) zu speichern
@@ -35,10 +39,12 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           MIN_RELEVANCE: ${{ vars.MIN_RELEVANCE || '6' }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-haiku-5-5' }}
-        run: python trump_watch.py --backfill "${{ inputs.backfill || '0' }}"
+        run: |
+          if [ "${{ inputs.test }}" = "true" ]; then python trump_watch.py --test
+          else python trump_watch.py --backfill "${{ inputs.backfill || '0' }}"; fi
       - name: Gesehene Posts speichern
         run: |
           git config user.name "trump-watch-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add seen.json
+          git add seen.json telegram_chat.txt 2>/dev/null || git add seen.json
           git diff --cached --quiet || (git commit -m "seen.json aktualisiert" && git push)

@@ -12,7 +12,7 @@ KI-Zugang (eins von beiden):
 
 Weitere Umgebungsvariablen:
   TELEGRAM_BOT_TOKEN  Token deines Telegram-Bots (von @BotFather)
-  TELEGRAM_CHAT_ID    Deine Chat-ID (setzt setup_telegram.sh automatisch)
+  TELEGRAM_CHAT_ID    optional – wird sonst automatisch gefunden (wer dem Bot START geschickt hat)
   NTFY_TOPIC          optional zusätzlich: Kanalname in der ntfy-App
   NTFY_SERVER         optional, Standard: https://ntfy.sh
   MIN_RELEVANCE       optional, 1-10, ab welcher Relevanz gepusht wird (Standard 6)
@@ -196,7 +196,7 @@ def analyze_via_api(content: str, post: dict) -> Optional[dict]:
 def send_push(title: str, message: str, url: str = "", priority: int = 4, tags: Optional[List[str]] = None):
     """Schickt die Nachricht an alle eingerichteten Kanäle (Telegram und/oder ntfy)."""
     channels = []
-    if os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_CHAT_ID"):
+    if os.environ.get("TELEGRAM_BOT_TOKEN"):
         channels.append(lambda: send_telegram(title, message, url))
     if os.environ.get("NTFY_TOPIC"):
         channels.append(lambda: send_ntfy(title, message, url, priority, tags))
@@ -213,23 +213,45 @@ def send_push(title: str, message: str, url: str = "", priority: int = 4, tags: 
         raise errors[0]
 
 
+CHAT_FILE = Path(__file__).with_name("telegram_chat.txt")
+
+
+def telegram_api(token: str, method: str, payload: dict) -> dict:
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/{method}",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read())["result"]
+
+
+def telegram_chat_id(token: str) -> str:
+    """Chat-ID aus Secret oder Datei – sonst automatisch finden: wer dem Bot zuletzt geschrieben hat."""
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID") or (CHAT_FILE.read_text().strip() if CHAT_FILE.exists() else "")
+    if chat_id:
+        return chat_id
+    for upd in reversed(telegram_api(token, "getUpdates", {"allowed_updates": ["message"]})):
+        chat = (upd.get("message") or {}).get("chat", {})
+        if chat.get("type") == "private":
+            CHAT_FILE.write_text(str(chat["id"]))
+            print("  Telegram-Chat gefunden und gespeichert.")
+            return str(chat["id"])
+    raise RuntimeError("Telegram: Noch niemand hat dem Bot geschrieben – bitte im Bot auf START tippen.")
+
+
 def send_telegram(title: str, message: str, url: str = ""):
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     text = f"<b>{html.escape(title)}</b>\n\n{html.escape(message)}"[:4000]
     payload = {
-        "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+        "chat_id": telegram_chat_id(token),
         "text": text,
         "parse_mode": "HTML",
         "link_preview_options": {"is_disabled": True},
     }
     if url:
         payload["reply_markup"] = {"inline_keyboard": [[{"text": "Original-Post öffnen", "url": url}]]}
-    req = urllib.request.Request(
-        f"https://api.telegram.org/bot{token}/sendMessage",
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-    )
-    urllib.request.urlopen(req, timeout=30).read()
+    telegram_api(token, "sendMessage", payload)
 
 
 def send_ntfy(title: str, message: str, url: str = "", priority: int = 4, tags: Optional[List[str]] = None):
