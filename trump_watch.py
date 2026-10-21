@@ -34,6 +34,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -226,6 +227,18 @@ def telegram_api(token: str, method: str, payload: dict) -> dict:
         return json.loads(resp.read())["result"]
 
 
+def telegram_check(token: str):
+    """Klare Fehlermeldung statt '401', ohne den Token zu verraten."""
+    try:
+        telegram_api(token, "getMe", {})
+    except urllib.error.HTTPError as e:
+        raw = os.environ["TELEGRAM_BOT_TOKEN"]
+        raise RuntimeError(
+            f"Telegram lehnt den Token ab ({e.code}). Eingefügt: {len(raw)} Zeichen, erkannt: {len(token)} "
+            f"(richtig wären ca. 44–46). Bitte bei @BotFather den Token erneut antippen und das Secret neu speichern."
+        )
+
+
 def telegram_chat_id(token: str) -> str:
     """Chat-ID aus Secret oder Datei – sonst automatisch finden: wer dem Bot zuletzt geschrieben hat."""
     chat_id = os.environ.get("TELEGRAM_CHAT_ID") or (CHAT_FILE.read_text().strip() if CHAT_FILE.exists() else "")
@@ -251,6 +264,7 @@ def telegram_token() -> str:
 
 def send_telegram(title: str, message: str, url: str = ""):
     token = telegram_token()
+    telegram_check(token)
     text = f"<b>{html.escape(title)}</b>\n\n{html.escape(message)}"[:4000]
     payload = {
         "chat_id": telegram_chat_id(token),
