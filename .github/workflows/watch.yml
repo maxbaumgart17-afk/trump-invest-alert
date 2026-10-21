@@ -2,7 +2,9 @@ name: Trump Invest Alert
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # alle 5 Minuten (GitHub kann sich um ein paar Minuten verspäten)
+    # Startet einen Dauer-Lauf (prüft jede Minute, ca. 5¾ Stunden lang).
+    # Der häufige Zeitplan sorgt dafür, dass immer schon der nächste Lauf bereitsteht.
+    - cron: "*/20 * * * *"
   workflow_dispatch:        # manuell starten über den "Run workflow"-Knopf
     inputs:
       backfill:
@@ -17,13 +19,14 @@ permissions:
   contents: write           # um seen.json (bereits gesehene Posts) zu speichern
 
 concurrency:
-  group: trump-watch
+  # Dauer-Läufe nacheinander; manuelle Tests laufen unabhängig davon sofort
+  group: trump-watch-${{ github.event_name }}
   cancel-in-progress: false
 
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -39,12 +42,19 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           MIN_RELEVANCE: ${{ vars.MIN_RELEVANCE || '6' }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-haiku-5-5' }}
-        run: |
-          if [ "${{ inputs.test }}" = "true" ]; then python trump_watch.py --test
-          else python trump_watch.py --backfill "${{ inputs.backfill || '0' }}"; fi
-      - name: Gesehene Posts speichern
+          GIT_SYNC: "1"
         run: |
           git config user.name "trump-watch-bot"
           git config user.email "actions@users.noreply.github.com"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python -u trump_watch.py --loop 60 --duration 20700
+          elif [ "${{ inputs.test }}" = "true" ]; then
+            python trump_watch.py --test
+          else
+            python trump_watch.py --backfill "${{ inputs.backfill || '0' }}"
+          fi
+      - name: Gesehene Posts speichern
+        if: always()
+        run: |
           git add seen.json telegram_chat.txt 2>/dev/null || git add seen.json
-          git diff --cached --quiet || (git commit -m "seen.json aktualisiert" && git push)
+          git diff --cached --quiet || (git commit -m "seen.json aktualisiert" && git pull -q --rebase -X theirs && git push)

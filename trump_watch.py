@@ -68,11 +68,14 @@ Bewerte die Relevanz von 1 (gar nicht) bis 10 (kann Märkte sofort bewegen).
 Antworte auf Deutsch und knapp. Gib keine Kauf- oder Verkaufsempfehlung ab,
 sondern beschreibe nur, welche Bereiche betroffen sein könnten.
 
-Bei relevanten Posts nenne in "instruments" bis zu 3 konkrete, in Deutschland handelbare
-Wertpapiere, die am direktesten betroffen sind: einzelne große Aktien, oder bei breiten
-Themen (z.B. Zölle auf ein Land, eine ganze Branche) einen passenden UCITS-ETF.
-Gib den offiziellen Namen und, falls bekannt, die ISIN an (sonst leerer String).
-"direction" beschreibt nur die mögliche Wirkung des Posts, keine Empfehlung."""
+Der Nutzer interessiert sich NUR für Werte, die durch den Post steigen könnten (keine
+Leerverkäufe, nichts auf fallende Kurse). Nenne in "instruments" deshalb nur bis zu 3 konkrete,
+in Deutschland handelbare Wertpapiere, für die der Post klar positiv ist – z.B. weil Trump sie
+lobt, zum Kauf aufruft, Aufträge/Subventionen/Zölle zu ihren Gunsten ankündigt. Einzelne große
+Aktien, oder bei breiten Themen einen passenden UCITS-ETF. Gib den offiziellen Namen und, falls
+bekannt, die ISIN an (sonst leerer String). Ist für keinen Wert ein klarer positiver Effekt
+erkennbar, lass "instruments" leer – auch wenn der Post wirtschaftlich relevant ist.
+"direction" ist dann immer "positiv"; es beschreibt nur die mögliche Wirkung, keine Empfehlung."""
 
 SCHEMA = {
     "type": "object",
@@ -88,7 +91,7 @@ SCHEMA = {
         },
         "instruments": {
             "type": "array",
-            "description": "Bis zu 3 konkrete Wertpapiere (leer, wenn nicht relevant)",
+            "description": "Bis zu 3 Wertpapiere, die durch den Post steigen könnten (sonst leer)",
             "items": {
                 "type": "object",
                 "properties": {
@@ -356,7 +359,8 @@ def send_ntfy(title: str, message: str, url: str = "", priority: int = 4, tags: 
     urllib.request.urlopen(req, timeout=30).read()
 
 
-def notify(post: dict, result: dict):
+def notify(post: dict, result: dict) -> bool:
+    """Schickt die Meldung nur, wenn mindestens ein steigender Wert mit geprüfter WKN dabei ist."""
     stars = "🔥" * min(3, max(1, (result["relevance"] - 4) // 2))
     title = f"{stars} Trump: {result['topic']} ({result['relevance']}/10)"
     affected = ", ".join(result.get("affected") or [])
@@ -364,7 +368,7 @@ def notify(post: dict, result: dict):
 
     arrows = {"positiv": "📈", "negativ": "📉", "unklar": "↔️"}
     plain_lines, html_lines = [], []
-    for inst in (result.get("instruments") or [])[:3]:
+    for inst in [i for i in result.get("instruments") or [] if i.get("direction") == "positiv"][:3]:
         hit = lookup_wkn(inst)
         if not hit:
             continue  # lieber weglassen als eine ungeprüfte WKN anzeigen
@@ -378,13 +382,16 @@ def notify(post: dict, result: dict):
         message += f"\n📊 Betroffen: {affected}"
         html_msg += f"\n📊 Betroffen: {html.escape(affected)}"
     if plain_lines:
-        message += "\n\n💼 Mögliche Werte:\n" + "\n".join(plain_lines)
-        html_msg += "\n\n💼 <b>Mögliche Werte</b> (WKN antippen = kopieren):\n" + "\n".join(html_lines)
+        message += "\n\n💼 Könnte steigen:\n" + "\n".join(plain_lines)
+        html_msg += "\n\n💼 <b>Könnte steigen</b> (WKN antippen = kopieren):\n" + "\n".join(html_lines)
         html_msg += "\n<i>Keine Anlageberatung.</i>"
+    if not plain_lines:
+        return False  # kein Wert, der steigen könnte -> keine Meldung
     for line in plain_lines:
         print(f"         {line}")
     priority = 5 if result["relevance"] >= 9 else 4
     send_push(title, message, post["url"], priority, html_message=html_msg)
+    return True
 
 
 # ---------------------------------------------------------------- Zustand
@@ -427,20 +434,32 @@ def check_once(backfill: int = 0):
             break  # Rest beim nächsten Lauf, Reihenfolge bleibt erhalten
 
         if result:
-            hit = result["is_investment_related"] and result["relevance"] >= MIN_RELEVANCE
-            print(f"  [{'PUSH' if hit else ' -- '}] {result['relevance']:>2}/10 {result['topic']}: {post['text'][:80]!r}")
-            if hit:
-                notify(post, result)
+            relevant = result["is_investment_related"] and result["relevance"] >= MIN_RELEVANCE
+            sent = notify(post, result) if relevant else False
+            mark = "PUSH" if sent else ("nur↓" if relevant else " -- ")
+            print(f"  [{mark}] {result['relevance']:>2}/10 {result['topic']}: {post['text'][:80]!r}")
 
         if post["id"] not in seen:
             seen.append(post["id"])
         save_seen(seen)
 
 
+def git_sync():
+    """Gesehene Posts sofort ins Repo schreiben, damit der nächste Lauf nahtlos weitermacht."""
+    files = [f for f in ("seen.json", "telegram_chat.txt") if Path(f).exists()]
+    subprocess.run(["git", "add", *files], check=True)
+    if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
+        return
+    subprocess.run(["git", "commit", "-qm", "seen.json aktualisiert"], check=True)
+    subprocess.run(["git", "pull", "-q", "--rebase", "-X", "theirs"], check=False)
+    subprocess.run(["git", "push", "-q"], check=False)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Trump Truth Social -> KI -> Push")
     parser.add_argument("--loop", type=int, metavar="SEK", help="dauerhaft laufen, alle SEK Sekunden prüfen")
     parser.add_argument("--test", action="store_true", help="Test-Push senden")
+    parser.add_argument("--duration", type=int, default=0, metavar="SEK", help="mit --loop: nach SEK Sekunden beenden")
     parser.add_argument("--backfill", type=int, default=0, metavar="N", help="die letzten N Posts erneut analysieren")
     args = parser.parse_args()
 
@@ -450,9 +469,12 @@ def main():
         return
 
     if args.loop:
-        while True:
+        end = time.time() + args.duration if args.duration else float("inf")
+        while time.time() < end:
             try:
                 check_once()
+                if os.environ.get("GIT_SYNC"):
+                    git_sync()
             except Exception as e:  # im Dauerbetrieb nie abstürzen
                 print(f"Fehler: {e}", file=sys.stderr)
             time.sleep(args.loop)
