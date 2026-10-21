@@ -256,8 +256,8 @@ def telegram_chat_id(token: str) -> str:
 def telegram_token() -> str:
     """Token aus dem Secret herausfischen – auch wenn beim Einfügen Leerzeichen oder Text mitgerutscht sind."""
     raw = os.environ["TELEGRAM_BOT_TOKEN"]
-    # Telegram-Tokens: Bot-ID, Doppelpunkt, genau 35 Zeichen – drumherum mitkopierter Text wird ignoriert
-    match = re.search(r"(?<![A-Za-z0-9_-])\d{6,}:[A-Za-z0-9_-]{35}(?![A-Za-z0-9_-])", raw)
+    # Telegram-Tokens: Bot-ID, Doppelpunkt, genau 35 Zeichen – mitkopierter Text oder doppeltes Einfügen wird ignoriert
+    match = re.search(r"(?<![A-Za-z0-9_-])\d{6,}:[A-Za-z0-9_-]{35}", raw)
     if not match:
         shape = " ".join(f"[{len(c)}{':' if ':' in c else ''}]" for c in raw.split())  # nur Längen, kein Inhalt
         raise RuntimeError(f"Telegram-Token sieht unvollständig aus ({len(raw.strip())} Zeichen, Aufbau {shape}) – bitte neu einfügen.")
