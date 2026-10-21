@@ -30,6 +30,8 @@ jobs:
       - name: Neue Posts prüfen
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           MIN_RELEVANCE: ${{ vars.MIN_RELEVANCE || '6' }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-haiku-5-5' }}

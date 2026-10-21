@@ -12,11 +12,16 @@ Truth Social ──► trumpstruth.org-Feed ──► Claude-Bewertung (1–10) 
 
 ## Einrichtung (ca. 10 Minuten)
 
-### 1. Push-App aufs Handy
-1. **ntfy** installieren ([iPhone](https://apps.apple.com/app/ntfy/id1625396347) / [Android](https://play.google.com/store/apps/details?id=io.heckel.ntfy)).
-2. In der App **„+“ → Thema abonnieren** und einen geheimen Namen eintragen, z. B.
-   einen langen, zufälligen Namen wie `trump-invest-k3x9q7mw2p` (der Name ist wie ein Passwort: wer ihn kennt, kann mitlesen – nirgends öffentlich posten).
-3. iPhone: Mitteilungen für ntfy erlauben.
+### 1. Push aufs Handy über Telegram (empfohlen)
+1. **Telegram** installieren und in Telegram **@BotFather** öffnen → `/newbot` senden → Namen und
+   einen Benutzernamen (endet auf `bot`) vergeben → den angezeigten Token kopieren.
+2. Auf dem Mac ausführen, dann den angezeigten Link auf dem Handy öffnen und **START** tippen:
+   ```bash
+   python3 setup_telegram.py
+   ```
+   Das Skript speichert alles bei GitHub und schickt eine Test-Nachricht.
+
+*(Alternativ/zusätzlich: ntfy-App mit Secret `NTFY_TOPIC`. Auf dem iPhone kamen dort bei uns aber keine Mitteilungen an.)*
 
 ### 2. Claude-Zugang über dein Abo (kostenlos)
 Die App nutzt **Claude Code mit deinem Claude-Abo (Pro/Max)**. Es entstehen keine Extrakosten, die paar

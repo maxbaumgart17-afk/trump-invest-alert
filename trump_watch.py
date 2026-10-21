@@ -11,7 +11,9 @@ KI-Zugang (eins von beiden):
   ANTHROPIC_API_KEY        alternativ: API-Key von console.anthropic.com (Prepaid-Guthaben)
 
 Weitere Umgebungsvariablen:
-  NTFY_TOPIC          Geheimer Kanalname, den du in der ntfy-App abonnierst
+  TELEGRAM_BOT_TOKEN  Token deines Telegram-Bots (von @BotFather)
+  TELEGRAM_CHAT_ID    Deine Chat-ID (setzt setup_telegram.sh automatisch)
+  NTFY_TOPIC          optional zusätzlich: Kanalname in der ntfy-App
   NTFY_SERVER         optional, Standard: https://ntfy.sh
   MIN_RELEVANCE       optional, 1-10, ab welcher Relevanz gepusht wird (Standard 6)
   CLAUDE_MODEL        optional, Standard: claude-haiku-5-5
@@ -192,11 +194,47 @@ def analyze_via_api(content: str, post: dict) -> Optional[dict]:
 # ---------------------------------------------------------------- Push
 
 def send_push(title: str, message: str, url: str = "", priority: int = 4, tags: Optional[List[str]] = None):
-    topic = os.environ.get("NTFY_TOPIC")
-    if not topic:
-        sys.exit("NTFY_TOPIC fehlt – bitte setzen (siehe README).")
+    """Schickt die Nachricht an alle eingerichteten Kanäle (Telegram und/oder ntfy)."""
+    channels = []
+    if os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_CHAT_ID"):
+        channels.append(lambda: send_telegram(title, message, url))
+    if os.environ.get("NTFY_TOPIC"):
+        channels.append(lambda: send_ntfy(title, message, url, priority, tags))
+    if not channels:
+        sys.exit("Kein Push-Kanal eingerichtet (TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID oder NTFY_TOPIC).")
+    errors = []
+    for send in channels:
+        try:
+            send()
+        except Exception as e:  # ein kaputter Kanal soll die anderen nicht blockieren
+            errors.append(e)
+            print(f"  Push-Fehler: {e}", file=sys.stderr)
+    if len(errors) == len(channels):
+        raise errors[0]
+
+
+def send_telegram(title: str, message: str, url: str = ""):
+    token = os.environ["TELEGRAM_BOT_TOKEN"]
+    text = f"<b>{html.escape(title)}</b>\n\n{html.escape(message)}"[:4000]
     payload = {
-        "topic": topic,
+        "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+        "text": text,
+        "parse_mode": "HTML",
+        "link_preview_options": {"is_disabled": True},
+    }
+    if url:
+        payload["reply_markup"] = {"inline_keyboard": [[{"text": "Original-Post öffnen", "url": url}]]}
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/sendMessage",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+    )
+    urllib.request.urlopen(req, timeout=30).read()
+
+
+def send_ntfy(title: str, message: str, url: str = "", priority: int = 4, tags: Optional[List[str]] = None):
+    payload = {
+        "topic": os.environ["NTFY_TOPIC"],
         "title": title,
         "message": message,
         "priority": priority,  # 1-5, 5 = dringend (durchbricht ggf. Stummschaltung)
