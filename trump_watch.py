@@ -35,6 +35,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -65,7 +66,13 @@ Kultur, Links zu Artikeln ohne wirtschaftlichen Bezug.
 
 Bewerte die Relevanz von 1 (gar nicht) bis 10 (kann Märkte sofort bewegen).
 Antworte auf Deutsch und knapp. Gib keine Kauf- oder Verkaufsempfehlung ab,
-sondern beschreibe nur, welche Bereiche betroffen sein könnten."""
+sondern beschreibe nur, welche Bereiche betroffen sein könnten.
+
+Bei relevanten Posts nenne in "instruments" bis zu 3 konkrete, in Deutschland handelbare
+Wertpapiere, die am direktesten betroffen sind: einzelne große Aktien, oder bei breiten
+Themen (z.B. Zölle auf ein Land, eine ganze Branche) einen passenden UCITS-ETF.
+Gib den offiziellen Namen und, falls bekannt, die ISIN an (sonst leerer String).
+"direction" beschreibt nur die mögliche Wirkung des Posts, keine Empfehlung."""
 
 SCHEMA = {
     "type": "object",
@@ -79,8 +86,23 @@ SCHEMA = {
             "items": {"type": "string"},
             "description": "Betroffene Ticker, Firmen, Branchen oder Assets",
         },
+        "instruments": {
+            "type": "array",
+            "description": "Bis zu 3 konkrete Wertpapiere (leer, wenn nicht relevant)",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {"type": "string", "description": "z.B. 'Pfizer' oder 'iShares NASDAQ US Biotechnology UCITS ETF'"},
+                    "isin": {"type": "string", "description": "ISIN falls bekannt, sonst leer"},
+                    "kind": {"type": "string", "enum": ["Aktie", "ETF", "ETC"]},
+                    "direction": {"type": "string", "enum": ["positiv", "negativ", "unklar"]},
+                },
+                "required": ["name", "isin", "kind", "direction"],
+                "additionalProperties": False,
+            },
+        },
     },
-    "required": ["is_investment_related", "relevance", "topic", "summary_de", "affected"],
+    "required": ["is_investment_related", "relevance", "topic", "summary_de", "affected", "instruments"],
     "additionalProperties": False,
 }
 
@@ -192,13 +214,49 @@ def analyze_via_api(content: str, post: dict) -> Optional[dict]:
     return json.loads(text)
 
 
+# ---------------------------------------------------------------- WKN-Suche
+
+ONVISTA_SEARCH = "https://api.onvista.de/api/v1/instruments/search/facet?searchValue="
+TRADEABLE = {"STOCK", "ETF", "ETC", "ETN", "FUND"}
+
+
+def onvista_search(query: str) -> List[dict]:
+    req = urllib.request.Request(ONVISTA_SEARCH + urllib.parse.quote(query), headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        data = json.loads(resp.read())
+    hits = []
+    for facet in data.get("facets") or []:
+        if facet.get("type") in TRADEABLE:
+            hits += [h for h in facet.get("results") or [] if h.get("wkn") and "(CDR)" not in (h.get("name") or "")]
+    return hits
+
+
+def lookup_wkn(instrument: dict) -> Optional[dict]:
+    """Echte WKN live bei onvista nachschlagen – nie aus dem KI-Gedächtnis übernehmen."""
+    name = instrument["name"].strip()
+    key = (re.findall(r"[A-Za-zÄÖÜäöü0-9]{3,}", name) or [name])[0].lower()
+    try:
+        isin = instrument.get("isin", "").strip().upper()
+        if re.fullmatch(r"[A-Z]{2}[A-Z0-9]{9}\d", isin):
+            for hit in onvista_search(isin):
+                # ISIN nur akzeptieren, wenn sie auch zum Namen passt (KI-ISINs können falsch sein)
+                if hit.get("isin") == isin and key in hit["name"].lower():
+                    return hit
+        hits = onvista_search(name)
+        return hits[0] if hits else None
+    except Exception as e:
+        print(f"  WKN-Suche fehlgeschlagen für {name}: {e}", file=sys.stderr)
+        return None
+
+
 # ---------------------------------------------------------------- Push
 
-def send_push(title: str, message: str, url: str = "", priority: int = 4, tags: Optional[List[str]] = None):
+def send_push(title: str, message: str, url: str = "", priority: int = 4, tags: Optional[List[str]] = None,
+              html_message: Optional[str] = None):
     """Schickt die Nachricht an alle eingerichteten Kanäle (Telegram und/oder ntfy)."""
     channels = []
     if os.environ.get("TELEGRAM_BOT_TOKEN"):
-        channels.append(lambda: send_telegram(title, message, url))
+        channels.append(lambda: send_telegram(title, message, url, html_message))
     if os.environ.get("NTFY_TOPIC"):
         channels.append(lambda: send_ntfy(title, message, url, priority, tags))
     if not channels:
@@ -264,10 +322,10 @@ def telegram_token() -> str:
     return match.group(0)
 
 
-def send_telegram(title: str, message: str, url: str = ""):
+def send_telegram(title: str, message: str, url: str = "", html_message: Optional[str] = None):
     token = telegram_token()
     telegram_check(token)
-    text = f"<b>{html.escape(title)}</b>\n\n{html.escape(message)}"[:4000]
+    text = f"<b>{html.escape(title)}</b>\n\n{html_message or html.escape(message)}"[:4000]
     payload = {
         "chat_id": telegram_chat_id(token),
         "text": text,
@@ -303,11 +361,28 @@ def notify(post: dict, result: dict):
     title = f"{stars} Trump: {result['topic']} ({result['relevance']}/10)"
     affected = ", ".join(result.get("affected") or [])
     body = post["text"][:1500]
+
+    arrows = {"positiv": "📈", "negativ": "📉", "unklar": "↔️"}
+    plain_lines, html_lines = [], []
+    for inst in (result.get("instruments") or [])[:3]:
+        hit = lookup_wkn(inst)
+        if not hit:
+            continue  # lieber weglassen als eine ungeprüfte WKN anzeigen
+        arrow = arrows.get(inst.get("direction"), "↔️")
+        plain_lines.append(f"{arrow} {hit['name']} – WKN {hit['wkn']}")
+        html_lines.append(f"{arrow} {html.escape(hit['name'])}\n     WKN: <code>{hit['wkn']}</code>")
+
     message = f"{body}\n\n🤖 {result['summary_de']}"
+    html_msg = f"{html.escape(body)}\n\n🤖 {html.escape(result['summary_de'])}"
     if affected:
         message += f"\n📊 Betroffen: {affected}"
+        html_msg += f"\n📊 Betroffen: {html.escape(affected)}"
+    if plain_lines:
+        message += "\n\n💼 Mögliche Werte:\n" + "\n".join(plain_lines)
+        html_msg += "\n\n💼 <b>Mögliche Werte</b> (WKN antippen = kopieren):\n" + "\n".join(html_lines)
+        html_msg += "\n<i>Keine Anlageberatung.</i>"
     priority = 5 if result["relevance"] >= 9 else 4
-    send_push(title, message, post["url"], priority)
+    send_push(title, message, post["url"], priority, html_message=html_msg)
 
 
 # ---------------------------------------------------------------- Zustand
