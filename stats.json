@@ -23,6 +23,150 @@
 "rel": 1,
 "topic": "Wahlkampf",
 "sent": false
+},
+{
+"at": "2026-10-27T19:11:05+00:00",
+"rel": 2,
+"topic": "Politik (Kanada/British Columbia)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:08+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:11+00:00",
+"rel": 1,
+"topic": "Repost ohne erkennbaren Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:14+00:00",
+"rel": 1,
+"topic": "Kein Textinhalt (nur Video-Verweis)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:17+00:00",
+"rel": 2,
+"topic": "Unklar (Repost ohne eigenen Text)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:20+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:23+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein erkennbarer Wirtschaftsbezug)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:25+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:28+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:30+00:00",
+"rel": 1,
+"topic": "Kein Inhalt (nur Video-Verweis)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:33+00:00",
+"rel": 2,
+"topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:36+00:00",
+"rel": 2,
+"topic": "Unklar (Repost ohne eigenen Text)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:39+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Textinhalt)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:43+00:00",
+"rel": 1,
+"topic": "Unklar / kein Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:46+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Themenbezug",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:50+00:00",
+"rel": 3,
+"topic": "KI / Sprache und Regulierung",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:53+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-27T19:11:56+00:00",
+"rel": 2,
+"topic": "Sonstiges (Video-Post, Frankreich/Politik)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:12:02+00:00",
+"rel": 7,
+"topic": "Energie/Öl (Venezuela, Energy Dominance)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:12:06+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Texas Senat)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:12:08+00:00",
+"rel": 2,
+"topic": "Medien / Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-27T19:12:11+00:00",
+"rel": 1,
+"topic": "Wahlkampf (Midterms, Kansas)",
+"sent": false
+},
+{
+"at": "2026-10-27T19:12:18+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Midterms",
+"sent": false
+},
+{
+"at": "2026-10-27T19:12:21+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
 }
 ],
 "last_summary": ""
