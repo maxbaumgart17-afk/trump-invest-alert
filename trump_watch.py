@@ -38,7 +38,9 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from typing import List, Optional
 
 FEED_URL = "https://www.trumpstruth.org/feed"  # öffentliches Archiv aller Truth-Social-Posts
@@ -413,6 +415,70 @@ def save_seen(seen: List[str]):
 
 # ---------------------------------------------------------------- Ablauf
 
+# ---------------------------------------------------------------- Wochenrückblick
+
+STATS_FILE = Path(__file__).with_name("stats.json")
+
+
+def load_stats() -> dict:
+    if STATS_FILE.exists():
+        return json.loads(STATS_FILE.read_text())
+    return {"posts": [], "last_summary": ""}
+
+
+def record_post(post: dict, result: Optional[dict], sent: bool):
+    if DRY_RUN:
+        return
+    stats = load_stats()
+    now = datetime.now(timezone.utc)
+    stats["posts"].append({
+        "at": now.isoformat(timespec="seconds"),
+        "rel": result["relevance"] if result else 0,
+        "topic": result["topic"] if result else "",
+        "sent": sent,
+    })
+    cutoff = (now - timedelta(days=14)).isoformat()
+    stats["posts"] = [p for p in stats["posts"] if p["at"] >= cutoff]
+    STATS_FILE.write_text(json.dumps(stats, ensure_ascii=False, indent=0))
+
+
+def weekly_summary(force: bool = False):
+    """Sonntags ab 18 Uhr (deutsche Zeit) einmal ein Lebenszeichen mit Rückblick schicken."""
+    stats = load_stats()
+    now = datetime.now(ZoneInfo("Europe/Berlin"))
+    today = now.date().isoformat()
+    if not force and (now.weekday() != 6 or now.hour < 18 or stats.get("last_summary") == today):
+        return
+    week_ago = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
+    week = [p for p in stats["posts"] if p["at"] >= week_ago]
+    sent = [p for p in week if p["sent"]]
+    top = sorted((p for p in week if p["topic"]), key=lambda p: -p["rel"])
+    seen_topics, top3 = set(), []
+    for p in top:
+        if p["topic"] not in seen_topics:
+            seen_topics.add(p["topic"])
+            top3.append(p)
+        if len(top3) == 3:
+            break
+
+    start = (now - timedelta(days=7)).strftime("%d.%m.")
+    lines = [
+        f"✅ Der Alert läuft. Diese Woche ({start}–{now:%d.%m.}):",
+        f"• {len(week)} Trump-Posts geprüft",
+        f"• {len(sent)} Meldung{'en' if len(sent) != 1 else ''} an dich geschickt",
+    ]
+    if top3:
+        lines.append("\n🔝 Wichtigste Themen:")
+        lines += [f"• {p['rel']}/10 {p['topic']}" + (" 📨" if p["sent"] else "") for p in top3]
+    if not sent:
+        lines.append(f"\nKeine Meldung, weil kein Post ab {MIN_RELEVANCE}/10 mit einem steigenden Wert dabei war.")
+    send_push("📅 Wochenrückblick Trump Invest Alert", "\n".join(lines), priority=3, tags=["calendar"])
+    stats["last_summary"] = today
+    if not DRY_RUN:
+        STATS_FILE.write_text(json.dumps(stats, ensure_ascii=False, indent=0))
+    print("Wochenrückblick gesendet.")
+
+
 def check_once(backfill: int = 0):
     posts = fetch_posts()
     seen = load_seen()
@@ -438,11 +504,14 @@ def check_once(backfill: int = 0):
             print(f"  Später erneut ({post['id']}): {e}", file=sys.stderr)
             break  # Rest beim nächsten Lauf, Reihenfolge bleibt erhalten
 
+        sent = False
         if result:
             relevant = result["is_investment_related"] and result["relevance"] >= MIN_RELEVANCE
             sent = notify(post, result) if relevant else False
             mark = "PUSH" if sent else ("nur↓" if relevant else " -- ")
             print(f"  [{mark}] {result['relevance']:>2}/10 {result['topic']}: {post['text'][:80]!r}")
+        if not backfill:
+            record_post(post, result, sent)
 
         if post["id"] not in seen:
             seen.append(post["id"])
@@ -451,25 +520,31 @@ def check_once(backfill: int = 0):
 
 def git_sync():
     """Gesehene Posts sofort ins Repo schreiben, damit der nächste Lauf nahtlos weitermacht."""
-    files = [f for f in ("seen.json", "telegram_chat.txt") if Path(f).exists()]
+    files = [f for f in ("seen.json", "stats.json", "telegram_chat.txt") if Path(f).exists()]
     subprocess.run(["git", "add", *files], check=True)
     if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
         return
     subprocess.run(["git", "commit", "-qm", "seen.json aktualisiert"], check=True)
     subprocess.run(["git", "pull", "-q", "--rebase", "-X", "theirs"], check=False)
-    subprocess.run(["git", "push", "-q"], check=False)
+    if subprocess.run(["git", "push", "-q"]).returncode != 0:
+        print("  Warnung: Speichern im Repo fehlgeschlagen, wird beim nächsten Mal erneut versucht.", file=sys.stderr)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Trump Truth Social -> KI -> Push")
     parser.add_argument("--loop", type=int, metavar="SEK", help="dauerhaft laufen, alle SEK Sekunden prüfen")
     parser.add_argument("--test", action="store_true", help="Test-Push senden")
+    parser.add_argument("--weekly", action="store_true", help="Wochenrückblick sofort senden")
     parser.add_argument("--dry-run", action="store_true", help="nur bewerten, nichts senden/speichern")
     parser.add_argument("--duration", type=int, default=0, metavar="SEK", help="mit --loop: nach SEK Sekunden beenden")
     parser.add_argument("--backfill", type=int, default=0, metavar="N", help="die letzten N Posts erneut analysieren")
     args = parser.parse_args()
     global DRY_RUN
     DRY_RUN = args.dry_run
+
+    if args.weekly:
+        weekly_summary(force=True)
+        return
 
     if args.test:
         send_push("✅ Trump Invest Alert", "Push funktioniert! Du bekommst ab jetzt Investment-relevante Trump-Posts.")
@@ -481,6 +556,7 @@ def main():
         while time.time() < end:
             try:
                 check_once()
+                weekly_summary()
                 if os.environ.get("GIT_SYNC"):
                     git_sync()
             except Exception as e:  # im Dauerbetrieb nie abstürzen

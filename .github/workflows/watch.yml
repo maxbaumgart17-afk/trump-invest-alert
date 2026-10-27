@@ -18,6 +18,10 @@ on:
         description: "Probelauf: bewerten und anzeigen, aber nichts senden"
         type: boolean
         default: false
+      weekly:
+        description: "Wochenrückblick jetzt schicken"
+        type: boolean
+        default: false
       test:
         description: "Nur eine Test-Nachricht schicken"
         type: boolean
@@ -37,6 +41,8 @@ jobs:
     timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # immer den neuesten Stand holen – wartende Läufe hätten sonst eine veraltete seen.json
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -56,6 +62,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.loop }}" = "true" ]; then
             python -u trump_watch.py --loop 60 --duration 20700
+          elif [ "${{ inputs.weekly }}" = "true" ]; then
+            python trump_watch.py --weekly
           elif [ "${{ inputs.test }}" = "true" ]; then
             python trump_watch.py --test
           elif [ "${{ inputs.dryrun }}" = "true" ]; then
@@ -66,5 +74,5 @@ jobs:
       - name: Gesehene Posts speichern
         if: always()
         run: |
-          git add seen.json telegram_chat.txt 2>/dev/null || git add seen.json
+          git add seen.json stats.json telegram_chat.txt 2>/dev/null || git add seen.json
           git diff --cached --quiet || (git commit -m "seen.json aktualisiert" && git pull -q --rebase -X theirs && git push)
