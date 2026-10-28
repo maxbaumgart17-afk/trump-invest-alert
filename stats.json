@@ -239,6 +239,48 @@
 "rel": 1,
 "topic": "Wahlkampf / Wahlrecht Alaska",
 "sent": false
+},
+{
+"at": "2026-10-28T23:11:34+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlbetrug-Vorwürfe (Alaska)",
+"sent": false
+},
+{
+"at": "2026-10-28T23:11:38+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-28T23:11:41+00:00",
+"rel": 1,
+"topic": "Wahlkampf / persönlicher Angriff",
+"sent": false
+},
+{
+"at": "2026-10-28T23:11:43+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-28T23:11:45+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-28T23:11:50+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-28T23:11:52+00:00",
+"rel": 2,
+"topic": "Sonstiges (Video-Link)",
+"sent": false
 }
 ],
 "last_summary": ""
