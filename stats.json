@@ -485,6 +485,78 @@
 "rel": 2,
 "topic": "Wahlkampf / Wahlempfehlung",
 "sent": false
+},
+{
+"at": "2026-10-29T21:11:29+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-29T21:11:33+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-29T21:11:38+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-29T21:11:42+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-29T21:11:45+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-29T21:11:49+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-29T21:11:53+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-29T21:11:57+00:00",
+"rel": 3,
+"topic": "Geopolitik (Iran)",
+"sent": false
+},
+{
+"at": "2026-10-29T21:12:01+00:00",
+"rel": 2,
+"topic": "Geopolitik (Israel/Nahost)",
+"sent": false
+},
+{
+"at": "2026-10-29T21:12:04+00:00",
+"rel": 1,
+"topic": "Politik / persönlicher Angriff",
+"sent": false
+},
+{
+"at": "2026-10-29T21:12:07+00:00",
+"rel": 2,
+"topic": "Politik / Innenpolitik (Einwanderung, Strafverfolgung)",
+"sent": false
+},
+{
+"at": "2026-10-29T21:12:10+00:00",
+"rel": 2,
+"topic": "Politik / Russland-Ermittlungen (Retrospektive)",
+"sent": false
 }
 ],
 "last_summary": ""
