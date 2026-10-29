@@ -281,6 +281,24 @@
 "rel": 2,
 "topic": "Sonstiges (Video-Link)",
 "sent": false
+},
+{
+"at": "2026-10-29T03:10:45+00:00",
+"rel": 1,
+"topic": "Unklar (nur Bildhinweise)",
+"sent": false
+},
+{
+"at": "2026-10-29T03:10:49+00:00",
+"rel": 1,
+"topic": "Sonstiges (Retweet ohne Inhalt)",
+"sent": false
+},
+{
+"at": "2026-10-29T03:10:52+00:00",
+"rel": 2,
+"topic": "Lokales Infrastrukturprojekt / Golfplatz Washington D.C. / Justiz",
+"sent": false
 }
 ],
 "last_summary": ""
