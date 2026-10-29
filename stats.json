@@ -299,6 +299,36 @@
 "rel": 2,
 "topic": "Lokales Infrastrukturprojekt / Golfplatz Washington D.C. / Justiz",
 "sent": false
+},
+{
+"at": "2026-10-29T13:10:57+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-29T13:10:59+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-29T13:11:02+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Kongress-Endorsement)",
+"sent": false
+},
+{
+"at": "2026-10-29T13:11:05+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-29T13:11:11+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Persönliches",
+"sent": false
 }
 ],
 "last_summary": ""
