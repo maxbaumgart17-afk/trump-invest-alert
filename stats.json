@@ -413,6 +413,78 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema (nur Video-Verweis)",
 "sent": false
+},
+{
+"at": "2026-10-29T19:11:10+00:00",
+"rel": 2,
+"topic": "Repost ohne erkennbaren Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:13+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Verweis)",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:16+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Text, nur Video-Verweis)",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:20+00:00",
+"rel": 2,
+"topic": "Repost (unklar)",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:24+00:00",
+"rel": 2,
+"topic": "Repost ohne erkennbaren Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:29+00:00",
+"rel": 4,
+"topic": "Konjunktur / Wirtschaftsdaten",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:32+00:00",
+"rel": 1,
+"topic": "Sonstiges",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:35+00:00",
+"rel": 1,
+"topic": "Repost ohne eigenen Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:39+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:42+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:46+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-29T19:11:49+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
 }
 ],
 "last_summary": ""
