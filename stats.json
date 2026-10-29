@@ -557,6 +557,42 @@
 "rel": 2,
 "topic": "Politik / Russland-Ermittlungen (Retrospektive)",
 "sent": false
+},
+{
+"at": "2026-10-29T23:11:30+00:00",
+"rel": 2,
+"topic": "Politik / Justiz (Russland-Ermittlungen)",
+"sent": false
+},
+{
+"at": "2026-10-29T23:11:32+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-29T23:11:35+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlaufruf",
+"sent": false
+},
+{
+"at": "2026-10-29T23:11:39+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-29T23:11:43+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-29T23:11:47+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
 }
 ],
 "last_summary": ""
