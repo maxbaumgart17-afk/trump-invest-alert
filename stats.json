@@ -635,6 +635,66 @@
 "rel": 3,
 "topic": "Inflation / Konjunktur",
 "sent": false
+},
+{
+"at": "2026-10-30T12:50:00+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Persönliches",
+"sent": false
+},
+{
+"at": "2026-10-30T12:50:02+00:00",
+"rel": 1,
+"topic": "Medien / Persönliches",
+"sent": false
+},
+{
+"at": "2026-10-30T12:50:41+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-30T12:50:44+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-30T12:50:47+00:00",
+"rel": 1,
+"topic": "Sonstiges (Repost ohne Inhalt)",
+"sent": false
+},
+{
+"at": "2026-10-30T12:50:50+00:00",
+"rel": 1,
+"topic": "Kein Inhalt (nur Video-Verweis)",
+"sent": false
+},
+{
+"at": "2026-10-30T12:50:53+00:00",
+"rel": 2,
+"topic": "Unbekannt (Repost)",
+"sent": false
+},
+{
+"at": "2026-10-30T12:50:55+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Inhalt)",
+"sent": false
+},
+{
+"at": "2026-10-30T12:50:58+00:00",
+"rel": 1,
+"topic": "Repost ohne erkennbaren Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-30T12:51:01+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Umfrage (Midterms)",
+"sent": false
 }
 ],
 "last_summary": ""
