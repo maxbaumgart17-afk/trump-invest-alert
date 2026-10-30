@@ -599,6 +599,42 @@
 "rel": 2,
 "topic": "Politik / Russland-Ermittlungen (Rückblick)",
 "sent": false
+},
+{
+"at": "2026-10-30T10:50:29+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-10-30T10:50:32+00:00",
+"rel": 1,
+"topic": "Repost ohne erkennbaren Inhalt",
+"sent": false
+},
+{
+"at": "2026-10-30T10:50:35+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Verweis)",
+"sent": false
+},
+{
+"at": "2026-10-30T10:50:38+00:00",
+"rel": 2,
+"topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
+"sent": false
+},
+{
+"at": "2026-10-30T10:50:43+00:00",
+"rel": 4,
+"topic": "Konjunktur / Wirtschaftslage",
+"sent": false
+},
+{
+"at": "2026-10-30T10:50:47+00:00",
+"rel": 3,
+"topic": "Inflation / Konjunktur",
+"sent": false
 }
 ],
 "last_summary": ""
