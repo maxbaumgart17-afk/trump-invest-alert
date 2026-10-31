@@ -1103,6 +1103,126 @@
 "rel": 1,
 "topic": "Wahlkampf / Kongress-Endorsement",
 "sent": false
+},
+{
+"at": "2026-10-31T06:51:27+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:30+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:33+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:37+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:40+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:43+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:46+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:50+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:53+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T06:51:56+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:00+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:03+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:07+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:12+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:15+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:18+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:21+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:25+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:29+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt (Video-Link)",
+"sent": false
+},
+{
+"at": "2026-10-31T06:52:32+00:00",
+"rel": 1,
+"topic": "Sonstiges (Repost ohne Inhalt)",
+"sent": false
 }
 ],
 "last_summary": ""
