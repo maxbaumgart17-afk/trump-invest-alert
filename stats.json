@@ -1247,6 +1247,186 @@
 "rel": 1,
 "topic": "Kein Inhalt (nur Bild-Hinweis)",
 "sent": false
+},
+{
+"at": "2026-10-31T18:50:26+00:00",
+"rel": 2,
+"topic": "Wahlen / Justiz (Wahlbetrug-Vorwürfe)",
+"sent": false
+},
+{
+"at": "2026-10-31T18:50:29+00:00",
+"rel": 2,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T18:50:32+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:50:37+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Gouverneurswahl Pennsylvania",
+"sent": false
+},
+{
+"at": "2026-10-31T18:50:40+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:50:43+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T18:50:47+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:50:54+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:50:57+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:01+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:04+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:07+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:12+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:15+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:19+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:24+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:27+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:30+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:35+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:38+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:41+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement (Kongress, Ohio 5)",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:45+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:48+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:51+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:54+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T18:51:58+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement (Ohio Gouverneurswahl)",
+"sent": false
+},
+{
+"at": "2026-10-31T18:52:03+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Senatswahl Ohio)",
+"sent": false
+},
+{
+"at": "2026-10-31T18:52:06+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T18:52:09+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlaufruf",
+"sent": false
+},
+{
+"at": "2026-10-31T18:52:13+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
 }
 ],
 "last_summary": ""
