@@ -1427,6 +1427,78 @@
 "rel": 1,
 "topic": "Wahlkampf",
 "sent": false
+},
+{
+"at": "2026-10-31T20:50:44+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T20:50:47+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Kongress-Endorsement Ohio 9)",
+"sent": false
+},
+{
+"at": "2026-10-31T20:50:50+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik (Florida)",
+"sent": false
+},
+{
+"at": "2026-10-31T20:50:59+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Gouverneurswahl Florida)",
+"sent": false
+},
+{
+"at": "2026-10-31T20:51:02+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T20:51:04+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T20:51:09+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T20:51:12+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T20:51:15+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-10-31T20:51:18+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Bildhinweis)",
+"sent": false
+},
+{
+"at": "2026-10-31T20:51:21+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-10-31T20:51:25+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
 }
 ],
 "last_summary": ""
