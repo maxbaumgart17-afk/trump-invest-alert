@@ -1049,6 +1049,60 @@
 "rel": 1,
 "topic": "Wahlkampf / Politik",
 "sent": false
+},
+{
+"at": "2026-10-31T04:50:16+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T04:50:20+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T04:50:23+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T04:50:27+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T04:50:34+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T04:50:37+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T04:50:40+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement (Kongressabgeordneter Brandon Gill, Texas)",
+"sent": false
+},
+{
+"at": "2026-10-31T04:50:44+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T04:50:47+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
 }
 ],
 "last_summary": ""
