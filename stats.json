@@ -1499,6 +1499,180 @@
 "rel": 2,
 "topic": "Wahlkampf-Endorsement",
 "sent": false
+},
+{
+"at": "2026-10-31T22:50:44+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T22:50:47+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T22:50:50+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Wahlempfehlung)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:50:54+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T22:50:56+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:00+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:03+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Steuern (allgemein)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:07+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:10+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (NY-Generalstaatsanwalt)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:14+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement (New York Gouverneurswahl)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:16+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Early Voting New York",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:19+00:00",
+"rel": 1,
+"topic": "Wahlkampf (New York Early Voting)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:21+00:00",
+"rel": 2,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:24+00:00",
+"rel": 2,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:26+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:29+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlungen (Florida)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:32+00:00",
+"rel": 2,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:36+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:39+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:43+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Steuern (Endorsement)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:47+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Steuern (Trinkgeld-, Überstunden- und Sozialversicherungssteuer)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:51+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:54+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-10-31T22:51:58+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-10-31T22:52:01+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Michigan Gouverneurswahl)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:52:04+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Senatswahl Michigan)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:52:06+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Early Voting (Michigan)",
+"sent": false
+},
+{
+"at": "2026-10-31T22:52:09+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Midterms",
+"sent": false
+},
+{
+"at": "2026-10-31T22:52:11+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
 }
 ],
 "last_summary": ""
