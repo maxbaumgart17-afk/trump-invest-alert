@@ -1241,6 +1241,12 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema",
 "sent": false
+},
+{
+"at": "2026-10-31T16:50:12+00:00",
+"rel": 1,
+"topic": "Kein Inhalt (nur Bild-Hinweis)",
+"sent": false
 }
 ],
 "last_summary": ""
