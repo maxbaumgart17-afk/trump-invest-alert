@@ -1991,6 +1991,30 @@
 "rel": 1,
 "topic": "Wahlkampf / Wahlempfehlung (Iowa)",
 "sent": false
+},
+{
+"at": "2026-11-01T18:50:17+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Textinhalt)",
+"sent": false
+},
+{
+"at": "2026-11-01T18:50:22+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Midterms",
+"sent": false
+},
+{
+"at": "2026-11-01T18:50:27+00:00",
+"rel": 2,
+"topic": "Wahlkampf (US-Senat Michigan)",
+"sent": false
+},
+{
+"at": "2026-11-01T18:50:30+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Justiz (Kansas)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
