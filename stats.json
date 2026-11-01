@@ -2015,6 +2015,186 @@
 "rel": 1,
 "topic": "Wahlkampf / Justiz (Kansas)",
 "sent": false
+},
+{
+"at": "2026-11-01T20:50:47+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T20:50:50+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T20:50:54+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Kongress-Endorsement Texas)",
+"sent": false
+},
+{
+"at": "2026-11-01T20:50:57+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Kongress-Endorsement Texas)",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:00+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:04+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Kongress-Endorsement Texas)",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:12+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:16+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:19+00:00",
+"rel": 1,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:22+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:26+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:29+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:33+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:36+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:38+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:42+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:46+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:50+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:54+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T20:51:58+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:02+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Texas)",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:06+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement (Texas Attorney General)",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:09+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Texas)",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:13+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:17+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Senatswahl Texas)",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:21+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Texas-Wahlempfehlungen",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:24+00:00",
+"rel": 2,
+"topic": "Persönlicher Angriff / politische Vorwürfe",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:28+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Midterms",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:31+00:00",
+"rel": 2,
+"topic": "Wahlkampf (US-Senatswahl Michigan)",
+"sent": false
+},
+{
+"at": "2026-11-01T20:52:36+00:00",
+"rel": 1,
+"topic": "Politik / persönliche Angriffe",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
