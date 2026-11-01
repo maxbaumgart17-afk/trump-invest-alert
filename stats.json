@@ -1895,6 +1895,102 @@
 "rel": 1,
 "topic": "Wahlkampf",
 "sent": false
+},
+{
+"at": "2026-11-01T16:50:43+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T16:50:46+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T16:50:50+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T16:50:54+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Gouverneurswahl Kansas",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:01+00:00",
+"rel": 3,
+"topic": "Wahlkampf-Endorsement mit Wirtschaftsbezug (Unternehmensinvestition, Öl & Gas, Steuern)",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:04+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:07+00:00",
+"rel": 1,
+"topic": "Wahlkampf (Kansas Midterms)",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:10+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:15+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:19+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:23+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:26+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:29+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:33+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:37+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-01T16:51:40+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung (Iowa)",
+"sent": false
 }
 ],
 "last_summary": ""
