@@ -1673,6 +1673,66 @@
 "rel": 1,
 "topic": "Wahlkampf",
 "sent": false
+},
+{
+"at": "2026-11-01T00:50:42+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T00:50:45+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T00:50:48+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T00:50:51+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T00:50:54+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T00:50:58+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Florida Agriculture Commissioner)",
+"sent": false
+},
+{
+"at": "2026-11-01T00:51:01+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-01T00:51:04+00:00",
+"rel": 2,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-01T00:51:07+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T00:51:11+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
 }
 ],
 "last_summary": ""
