@@ -1883,6 +1883,18 @@
 "rel": 1,
 "topic": "Kein Inhalt (nur Bildhinweis)",
 "sent": false
+},
+{
+"at": "2026-11-01T04:50:06+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-01T04:50:08+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
 }
 ],
 "last_summary": ""
