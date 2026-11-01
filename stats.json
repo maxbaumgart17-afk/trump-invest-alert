@@ -2195,6 +2195,66 @@
 "rel": 1,
 "topic": "Politik / persönliche Angriffe",
 "sent": false
+},
+{
+"at": "2026-11-01T22:50:53+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Wahlempfehlung)",
+"sent": false
+},
+{
+"at": "2026-11-01T22:50:57+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T22:51:02+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Wahlempfehlung)",
+"sent": false
+},
+{
+"at": "2026-11-01T22:51:05+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-11-01T22:51:09+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-01T22:51:14+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T22:51:18+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T22:51:21+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T22:51:25+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-01T22:51:28+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
