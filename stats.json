@@ -2495,6 +2495,54 @@
 "rel": 1,
 "topic": "Repost ohne erkennbaren Inhalt",
 "sent": false
+},
+{
+"at": "2026-11-02T20:50:14+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-02T20:50:18+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-02T20:50:22+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T20:50:25+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-02T20:50:31+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Landwirtschaftskommissar South Carolina)",
+"sent": false
+},
+{
+"at": "2026-11-02T20:50:35+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Gouverneurswahl South Carolina",
+"sent": false
+},
+{
+"at": "2026-11-02T20:50:39+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-02T20:50:42+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
