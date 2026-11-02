@@ -2255,6 +2255,12 @@
 "rel": 2,
 "topic": "Wahlkampf / Wahlempfehlung",
 "sent": false
+},
+{
+"at": "2026-11-02T00:50:58+00:00",
+"rel": 1,
+"topic": "Justiz / Politik",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
