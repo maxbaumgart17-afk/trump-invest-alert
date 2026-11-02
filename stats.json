@@ -2459,6 +2459,42 @@
 "rel": 1,
 "topic": "Wahlkampf",
 "sent": false
+},
+{
+"at": "2026-11-02T20:40:50+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T20:40:53+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T20:40:57+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-02T20:41:00+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-02T20:41:03+00:00",
+"rel": 1,
+"topic": "Unbekannt (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-11-02T20:41:06+00:00",
+"rel": 1,
+"topic": "Repost ohne erkennbaren Inhalt",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
