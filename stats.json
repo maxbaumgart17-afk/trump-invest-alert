@@ -2279,6 +2279,186 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema (nur Video-Link)",
 "sent": false
+},
+{
+"at": "2026-11-02T16:50:21+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt (nur Bild-Platzhalter)",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:24+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:28+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:31+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:35+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:38+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:41+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Steuerpolitik",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:45+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:47+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:51+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:55+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Kongresswahl NY-3)",
+"sent": false
+},
+{
+"at": "2026-11-02T16:50:59+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:02+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:05+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:11+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Gouverneurswahl New York",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:13+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Midterms New York",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:18+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:21+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:23+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:26+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:29+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:33+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Kongress-Endorsement)",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:36+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wiederwahl-Empfehlung",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:39+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:42+00:00",
+"rel": 1,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:45+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:48+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Kongress-Endorsement)",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:53+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:55+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Midterms",
+"sent": false
+},
+{
+"at": "2026-11-02T16:51:58+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
