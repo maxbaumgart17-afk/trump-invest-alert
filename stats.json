@@ -2951,6 +2951,138 @@
 "rel": 2,
 "topic": "Wahlkampf / Kongress-Endorsement (Georgia, 11. Wahlbezirk)",
 "sent": false
+},
+{
+"at": "2026-11-03T04:50:48+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-03T04:50:52+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T04:50:56+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:01+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:04+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:07+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:11+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:16+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:20+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:24+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:27+00:00",
+"rel": 2,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:30+00:00",
+"rel": 2,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:34+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:38+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Unterstützung Mike Johnson)",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:43+00:00",
+"rel": 3,
+"topic": "Wahlkampf / Politik (Senatswahl Louisiana)",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:47+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:50+00:00",
+"rel": 2,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:55+00:00",
+"rel": 1,
+"topic": "Wahlkampf / persönlicher Angriff",
+"sent": false
+},
+{
+"at": "2026-11-03T04:51:58+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlbetrug-Vorwurf (Alaska Senatswahl)",
+"sent": false
+},
+{
+"at": "2026-11-03T04:52:06+00:00",
+"rel": 7,
+"topic": "Energie/Öl, Geopolitik (Iran)",
+"sent": false
+},
+{
+"at": "2026-11-03T04:52:12+00:00",
+"rel": 4,
+"topic": "Steuern / Wirtschaftspolitik",
+"sent": false
+},
+{
+"at": "2026-11-03T04:52:16+00:00",
+"rel": 1,
+"topic": "Wahlkampf/Eigenlob (Repost)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
