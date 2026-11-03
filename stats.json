@@ -2933,6 +2933,24 @@
 "rel": 1,
 "topic": "Wahlkampf",
 "sent": false
+},
+{
+"at": "2026-11-03T02:50:26+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T02:50:30+00:00",
+"rel": 4,
+"topic": "Steuern / Wirtschaftslage USA",
+"sent": false
+},
+{
+"at": "2026-11-03T02:50:34+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement (Georgia, 11. Wahlbezirk)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
