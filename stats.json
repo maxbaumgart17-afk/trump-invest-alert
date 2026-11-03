@@ -3413,6 +3413,126 @@
 "rel": 1,
 "topic": "Wahlkampf",
 "sent": false
+},
+{
+"at": "2026-11-03T18:03:08+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Gouverneurswahl Kansas",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:11+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Gouverneurswahl Georgia",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:17+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:22+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Gouverneurswahl Ohio)",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:26+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Gouverneurswahl Michigan)",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:30+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Gouverneurswahl Iowa)",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:33+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:37+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:41+00:00",
+"rel": 2,
+"topic": "Wahlkampf (New York Gouverneurswahl)",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:44+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Gouverneurswahl Pennsylvania)",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:48+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Senatswahl Louisiana)",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:52+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-03T18:03:56+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-03T18:04:01+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-03T18:04:04+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T18:04:07+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T18:04:13+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-03T18:04:17+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Midterms Ohio)",
+"sent": false
+},
+{
+"at": "2026-11-03T18:04:22+00:00",
+"rel": 3,
+"topic": "Wahlkampf (Senat Kansas), Energie",
+"sent": false
+},
+{
+"at": "2026-11-03T18:04:25+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung (Iowa Senat)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
