@@ -3113,6 +3113,114 @@
 "rel": 1,
 "topic": "Wahlkampf / persönlicher Angriff",
 "sent": false
+},
+{
+"at": "2026-11-03T12:50:50+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-03T12:50:54+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Indiana State Senate)",
+"sent": false
+},
+{
+"at": "2026-11-03T12:50:57+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Unterstützung",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:01+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:05+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement (Indiana Landespolitik)",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:10+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:14+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:18+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wiederwahl-Unterstützung (Kongress, Michigan 4)",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:21+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:25+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Kongresskandidat Montana)",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:29+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:33+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:37+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:41+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politische Endorsements",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:44+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:48+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:53+00:00",
+"rel": 5,
+"topic": "Halbleiter / Investitionen (Arizona)",
+"sent": false
+},
+{
+"at": "2026-11-03T12:51:56+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
