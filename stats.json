@@ -3083,6 +3083,36 @@
 "rel": 1,
 "topic": "Wahlkampf/Eigenlob (Repost)",
 "sent": false
+},
+{
+"at": "2026-11-03T06:50:33+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-03T06:50:36+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-03T06:50:41+00:00",
+"rel": 1,
+"topic": "Unbekannt (nur Link)",
+"sent": false
+},
+{
+"at": "2026-11-03T06:50:44+00:00",
+"rel": 2,
+"topic": "Wahlkampf (Michigan Senatswahl)",
+"sent": false
+},
+{
+"at": "2026-11-03T06:50:48+00:00",
+"rel": 1,
+"topic": "Wahlkampf / persönlicher Angriff",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
