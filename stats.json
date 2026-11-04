@@ -4055,6 +4055,30 @@
 "rel": 3,
 "topic": "Medien / Unternehmen (Fox Corp)",
 "sent": false
+},
+{
+"at": "2026-11-04T04:50:37+00:00",
+"rel": 1,
+"topic": "Wahlkampf / persönlich",
+"sent": false
+},
+{
+"at": "2026-11-04T04:50:41+00:00",
+"rel": 1,
+"topic": "Wahlkampf / persönlich",
+"sent": false
+},
+{
+"at": "2026-11-04T04:50:46+00:00",
+"rel": 2,
+"topic": "Politik / Wahlkampf-Kommentar",
+"sent": false
+},
+{
+"at": "2026-11-04T04:50:50+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
