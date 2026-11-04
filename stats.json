@@ -4085,6 +4085,18 @@
 "rel": 1,
 "topic": "Medien / Persönlicher Angriff",
 "sent": false
+},
+{
+"at": "2026-11-04T18:50:33+00:00",
+"rel": 1,
+"topic": "Kein Textinhalt",
+"sent": false
+},
+{
+"at": "2026-11-04T18:50:38+00:00",
+"rel": 4,
+"topic": "Börse / Aktienmarkt",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
