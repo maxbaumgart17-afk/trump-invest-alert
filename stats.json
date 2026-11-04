@@ -3809,6 +3809,252 @@
 "rel": 2,
 "topic": "Wahlkampf / Wahlempfehlung",
 "sent": false
+},
+{
+"at": "2026-11-04T02:51:01+00:00",
+"rel": 2,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:08+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Midterms",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:10+00:00",
+"rel": 1,
+"topic": "Wahlkampf-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:13+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:15+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:18+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:21+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:26+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung (Michigan)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:28+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Kongress-Endorsement",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:31+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:33+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:36+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:38+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:42+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:44+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:47+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:50+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:51:57+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:01+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:04+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:08+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:10+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:13+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlempfehlung",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:16+00:00",
+"rel": 1,
+"topic": "Wahlkampf",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:19+00:00",
+"rel": 1,
+"topic": "Wahlkampf (US-Senat Michigan)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:23+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Politik",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:27+00:00",
+"rel": 2,
+"topic": "Wahlen / Politik (Guam)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:30+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Midterms",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:34+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Medien (Daily Mail)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:37+00:00",
+"rel": 1,
+"topic": "Persönlicher Angriff / Politik",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:40+00:00",
+"rel": 1,
+"topic": "Kein Thema erkennbar (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:43+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Kongresswahl",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:46+00:00",
+"rel": 1,
+"topic": "Unklar (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:52+00:00",
+"rel": 2,
+"topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:55+00:00",
+"rel": 1,
+"topic": "Sonstiges (Repost ohne Textinhalt)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:52:59+00:00",
+"rel": 1,
+"topic": "Persönlich / Wahlkampf (Medien)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:53:02+00:00",
+"rel": 2,
+"topic": "Unklar / kein erkennbarer Wirtschaftsbezug",
+"sent": false
+},
+{
+"at": "2026-11-04T02:53:06+00:00",
+"rel": 1,
+"topic": "Persönlicher Angriff / Medienkritik",
+"sent": false
+},
+{
+"at": "2026-11-04T02:53:09+00:00",
+"rel": 1,
+"topic": "Kein Thema erkennbar (nur Video-Verweis)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:53:11+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Textinhalt)",
+"sent": false
+},
+{
+"at": "2026-11-04T02:53:16+00:00",
+"rel": 3,
+"topic": "Medien / Unternehmen (Fox Corp)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
