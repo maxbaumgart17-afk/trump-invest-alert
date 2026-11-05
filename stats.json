@@ -4109,6 +4109,18 @@
 "rel": 1,
 "topic": "Unbekannt (kein Text, nur Bild)",
 "sent": false
+},
+{
+"at": "2026-11-05T15:23:38+00:00",
+"rel": 2,
+"topic": "Unbekannt (nur Link)",
+"sent": false
+},
+{
+"at": "2026-11-05T15:23:41+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlergebnis",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
