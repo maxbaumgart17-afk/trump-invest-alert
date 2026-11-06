@@ -4121,6 +4121,24 @@
 "rel": 1,
 "topic": "Wahlkampf / Wahlergebnis",
 "sent": false
+},
+{
+"at": "2026-11-06T00:50:46+00:00",
+"rel": 3,
+"topic": "Börse / US-Aktienmarkt nach Wahl",
+"sent": false
+},
+{
+"at": "2026-11-06T00:50:50+00:00",
+"rel": 3,
+"topic": "Börse / Politik (Wahlkampf-Rhetorik)",
+"sent": false
+},
+{
+"at": "2026-11-06T00:50:53+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Persönliches",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
