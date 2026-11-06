@@ -4151,6 +4151,18 @@
 "rel": 5,
 "topic": "KI / Technologie-Infrastruktur",
 "sent": false
+},
+{
+"at": "2026-11-06T18:21:16+00:00",
+"rel": 2,
+"topic": "Wahlkampf / RNC-Vorsitz",
+"sent": false
+},
+{
+"at": "2026-11-06T18:21:22+00:00",
+"rel": 3,
+"topic": "Geopolitik / Iran / Nahost",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
