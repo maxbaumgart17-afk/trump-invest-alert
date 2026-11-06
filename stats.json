@@ -4139,6 +4139,18 @@
 "rel": 1,
 "topic": "Wahlkampf / Persönliches",
 "sent": false
+},
+{
+"at": "2026-11-06T12:22:11+00:00",
+"rel": 3,
+"topic": "Geopolitik / Iran",
+"sent": false
+},
+{
+"at": "2026-11-06T12:22:17+00:00",
+"rel": 5,
+"topic": "KI / Technologie-Infrastruktur",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
