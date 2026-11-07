@@ -4277,6 +4277,48 @@
 "rel": 2,
 "topic": "Repost ohne Inhalt",
 "sent": false
+},
+{
+"at": "2026-11-07T22:21:32+00:00",
+"rel": 1,
+"topic": "Unklar (kein Textinhalt)",
+"sent": false
+},
+{
+"at": "2026-11-07T22:21:34+00:00",
+"rel": 1,
+"topic": "Sonstiges / kein Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-07T22:21:37+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (Video ohne Text)",
+"sent": false
+},
+{
+"at": "2026-11-07T22:21:40+00:00",
+"rel": 2,
+"topic": "Repost ohne erkennbaren Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-07T22:21:43+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Text, nur Videohinweis)",
+"sent": false
+},
+{
+"at": "2026-11-07T22:21:46+00:00",
+"rel": 1,
+"topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-07T22:21:48+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (Video-Link ohne Text)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
