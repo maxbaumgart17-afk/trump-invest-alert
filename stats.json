@@ -4169,6 +4169,24 @@
 "rel": 2,
 "topic": "Personalie (Weißes Haus)",
 "sent": false
+},
+{
+"at": "2026-11-07T04:21:20+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-07T04:21:23+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Text)",
+"sent": false
+},
+{
+"at": "2026-11-07T04:21:26+00:00",
+"rel": 1,
+"topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
