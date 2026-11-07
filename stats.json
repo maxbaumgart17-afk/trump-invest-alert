@@ -4187,6 +4187,24 @@
 "rel": 1,
 "topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
 "sent": false
+},
+{
+"at": "2026-11-07T16:21:56+00:00",
+"rel": 1,
+"topic": "Unklar (nur Bild-Link)",
+"sent": false
+},
+{
+"at": "2026-11-07T16:21:59+00:00",
+"rel": 2,
+"topic": "Unklar (Repost ohne erkennbaren Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-07T16:22:01+00:00",
+"rel": 1,
+"topic": "Kein Text (nur Bildhinweis)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
