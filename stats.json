@@ -4223,6 +4223,60 @@
 "rel": 2,
 "topic": "Politik / Justiz (Wahlkampf-Rhetorik)",
 "sent": false
+},
+{
+"at": "2026-11-07T20:21:42+00:00",
+"rel": 2,
+"topic": "Personalie / Wahlkampf-Stil (keine Wirtschaftsbezug)",
+"sent": false
+},
+{
+"at": "2026-11-07T20:21:44+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Politik (Demokraten, Justizministerium)",
+"sent": false
+},
+{
+"at": "2026-11-07T20:21:47+00:00",
+"rel": 1,
+"topic": "Sonstiges / kein Textinhalt",
+"sent": false
+},
+{
+"at": "2026-11-07T20:21:50+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-11-07T20:21:53+00:00",
+"rel": 2,
+"topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-07T20:21:55+00:00",
+"rel": 1,
+"topic": "Wahlkampf / Wahlergebnis Alaska (Senat)",
+"sent": false
+},
+{
+"at": "2026-11-07T20:21:58+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-07T20:22:01+00:00",
+"rel": 1,
+"topic": "Unklar (kein Textinhalt)",
+"sent": false
+},
+{
+"at": "2026-11-07T20:22:04+00:00",
+"rel": 2,
+"topic": "Repost ohne Inhalt",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
