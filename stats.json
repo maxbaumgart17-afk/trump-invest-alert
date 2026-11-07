@@ -4205,6 +4205,24 @@
 "rel": 1,
 "topic": "Kein Text (nur Bildhinweis)",
 "sent": false
+},
+{
+"at": "2026-11-07T18:22:17+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (Video-Link ohne Text)",
+"sent": false
+},
+{
+"at": "2026-11-07T18:22:20+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-07T18:22:24+00:00",
+"rel": 2,
+"topic": "Politik / Justiz (Wahlkampf-Rhetorik)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
