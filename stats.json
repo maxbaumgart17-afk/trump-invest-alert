@@ -4319,6 +4319,12 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema (Video-Link ohne Text)",
 "sent": false
+},
+{
+"at": "2026-11-08T04:21:49+00:00",
+"rel": 2,
+"topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
