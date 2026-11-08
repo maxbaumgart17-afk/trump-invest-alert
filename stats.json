@@ -4331,6 +4331,18 @@
 "rel": 4,
 "topic": "Börse / US-Aktienmarkt nach Wahl",
 "sent": false
+},
+{
+"at": "2026-11-08T16:22:13+00:00",
+"rel": 1,
+"topic": "Unklar (Video ohne Text)",
+"sent": false
+},
+{
+"at": "2026-11-08T16:22:16+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Medien",
+"sent": false
 }
 ],
 "last_summary": "2026-11-01"
