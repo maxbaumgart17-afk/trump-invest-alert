@@ -4379,6 +4379,18 @@
 "rel": 2,
 "topic": "Wahlkampf / Wahlbetrug-Vorwürfe",
 "sent": false
+},
+{
+"at": "2026-11-09T20:22:42+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-09T20:22:45+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (Video-Link ohne Text)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-08"
