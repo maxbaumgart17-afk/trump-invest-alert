@@ -4391,6 +4391,18 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema (Video-Link ohne Text)",
 "sent": false
+},
+{
+"at": "2026-11-09T22:22:04+00:00",
+"rel": 3,
+"topic": "Industriepolitik / Reshoring",
+"sent": false
+},
+{
+"at": "2026-11-09T22:22:09+00:00",
+"rel": 6,
+"topic": "Geopolitik / Iran / Energie",
+"sent": false
 }
 ],
 "last_summary": "2026-11-08"
