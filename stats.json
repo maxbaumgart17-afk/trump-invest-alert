@@ -1,30 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-10-27T17:11:21+00:00",
-"rel": 2,
-"topic": "Politik (Kanada/Quebec)",
-"sent": false
-},
-{
-"at": "2026-10-27T17:11:24+00:00",
-"rel": 4,
-"topic": "Konjunktur / Verbrauchervertrauen",
-"sent": false
-},
-{
-"at": "2026-10-27T17:11:27+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Persönliches",
-"sent": false
-},
-{
-"at": "2026-10-27T17:11:32+00:00",
-"rel": 1,
-"topic": "Wahlkampf",
-"sent": false
-},
-{
 "at": "2026-10-27T19:11:05+00:00",
 "rel": 2,
 "topic": "Politik (Kanada/British Columbia)",
@@ -4432,6 +4408,24 @@
 "at": "2026-11-10T16:28:48+00:00",
 "rel": 2,
 "topic": "Politik / Impeachment-Debatte",
+"sent": false
+},
+{
+"at": "2026-11-10T18:22:06+00:00",
+"rel": 1,
+"topic": "Personalie Justiz (Richternominierung)",
+"sent": false
+},
+{
+"at": "2026-11-10T18:22:09+00:00",
+"rel": 1,
+"topic": "Personalie / Justiz",
+"sent": false
+},
+{
+"at": "2026-11-10T18:22:12+00:00",
+"rel": 2,
+"topic": "Justiz / Personalie (Bundesrichter)",
 "sent": false
 }
 ],
