@@ -4415,6 +4415,24 @@
 "rel": 2,
 "topic": "Politik / Verteidigung (Personalie)",
 "sent": false
+},
+{
+"at": "2026-11-10T16:28:42+00:00",
+"rel": 2,
+"topic": "Wahlkampf / Wahlbetrug-Vorwürfe",
+"sent": false
+},
+{
+"at": "2026-11-10T16:28:45+00:00",
+"rel": 2,
+"topic": "Persönlicher Angriff / Politik (Kongress)",
+"sent": false
+},
+{
+"at": "2026-11-10T16:28:48+00:00",
+"rel": 2,
+"topic": "Politik / Impeachment-Debatte",
+"sent": false
 }
 ],
 "last_summary": "2026-11-08"
