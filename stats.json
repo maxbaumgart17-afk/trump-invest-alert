@@ -1,18 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-10-28T05:10:46+00:00",
-"rel": 2,
-"topic": "Politik / Israel / Wahlunterstützung",
-"sent": false
-},
-{
-"at": "2026-10-28T07:11:08+00:00",
-"rel": 3,
-"topic": "Iran / Außenpolitik",
-"sent": false
-},
-{
 "at": "2026-10-28T15:11:16+00:00",
 "rel": 2,
 "topic": "Wahlkampf",
@@ -4276,6 +4264,18 @@
 "at": "2026-11-11T00:22:12+00:00",
 "rel": 2,
 "topic": "Medien / Rechtsstreit (BBC)",
+"sent": false
+},
+{
+"at": "2026-11-11T08:22:11+00:00",
+"rel": 2,
+"topic": "Medien / Persönliche Angriffe",
+"sent": false
+},
+{
+"at": "2026-11-11T08:22:14+00:00",
+"rel": 1,
+"topic": "Medien / persönliche Angriffe",
 "sent": false
 }
 ],
