@@ -4265,6 +4265,18 @@
 "rel": 1,
 "topic": "Sonstiges (kein Inhalt)",
 "sent": false
+},
+{
+"at": "2026-11-11T00:22:08+00:00",
+"rel": 3,
+"topic": "Politik / Verteidigung",
+"sent": false
+},
+{
+"at": "2026-11-11T00:22:12+00:00",
+"rel": 2,
+"topic": "Medien / Rechtsstreit (BBC)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-08"
