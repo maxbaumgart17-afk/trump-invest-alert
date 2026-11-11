@@ -4283,6 +4283,12 @@
 "rel": 1,
 "topic": "Sonstiges (kein Inhalt)",
 "sent": false
+},
+{
+"at": "2026-11-11T20:22:49+00:00",
+"rel": 1,
+"topic": "Unklar (nur Bild)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-08"
