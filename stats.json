@@ -1,36 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-10-29T13:10:57+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-29T13:10:59+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-29T13:11:02+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Politik (Kongress-Endorsement)",
-"sent": false
-},
-{
-"at": "2026-10-29T13:11:05+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Endorsement",
-"sent": false
-},
-{
-"at": "2026-10-29T13:11:11+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Persönliches",
-"sent": false
-},
-{
 "at": "2026-10-29T15:11:16+00:00",
 "rel": 1,
 "topic": "Wahlkampf",
@@ -4216,6 +4186,24 @@
 "at": "2026-11-12T12:56:26+00:00",
 "rel": 6,
 "topic": "Zölle (Mexiko) / Migration",
+"sent": false
+},
+{
+"at": "2026-11-12T14:22:42+00:00",
+"rel": 2,
+"topic": "Innenpolitik / Senat / Wahlrecht",
+"sent": false
+},
+{
+"at": "2026-11-12T14:22:46+00:00",
+"rel": 6,
+"topic": "Iran / Geopolitik, Staatshaushalt, Blue-State-Finanzen",
+"sent": false
+},
+{
+"at": "2026-11-12T14:22:48+00:00",
+"rel": 2,
+"topic": "Politik / Korruptionsvorwürfe",
 "sent": false
 }
 ],
