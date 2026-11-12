@@ -1,78 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-10-29T17:10:53+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-29T17:10:57+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Reisebericht",
-"sent": false
-},
-{
-"at": "2026-10-29T17:10:59+00:00",
-"rel": 1,
-"topic": "Kein erkennbarer Inhalt (nur Video-Verweis)",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:02+00:00",
-"rel": 1,
-"topic": "Sonstiges (kein Inhalt)",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:05+00:00",
-"rel": 1,
-"topic": "Sonstiges (kein Inhalt)",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:08+00:00",
-"rel": 2,
-"topic": "Unklar (Repost ohne eigenen Text)",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:11+00:00",
-"rel": 2,
-"topic": "Sonstiges (Repost ohne eigenen Inhalt)",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:17+00:00",
-"rel": 2,
-"topic": "Repost ohne erkennbaren Inhalt",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:20+00:00",
-"rel": 1,
-"topic": "Sonstiges (kein Inhalt)",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:23+00:00",
-"rel": 2,
-"topic": "Repost ohne eigenen Text",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:26+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Reise",
-"sent": false
-},
-{
-"at": "2026-10-29T17:11:29+00:00",
-"rel": 1,
-"topic": "Kein erkennbares Thema (nur Video-Verweis)",
-"sent": false
-},
-{
 "at": "2026-10-29T19:11:10+00:00",
 "rel": 2,
 "topic": "Repost ohne erkennbaren Inhalt",
@@ -4205,6 +4133,12 @@
 "rel": 2,
 "topic": "Politik / Justiz (innenpolitisch)",
 "sent": false
+},
+{
+"at": "2026-11-12T18:22:46+00:00",
+"rel": 6,
+"topic": "Verteidigung / Haushalt",
+"sent": true
 }
 ],
 "last_summary": "2026-11-08"
