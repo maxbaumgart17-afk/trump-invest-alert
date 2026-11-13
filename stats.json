@@ -3881,6 +3881,12 @@
 "rel": 1,
 "topic": "Kein Thema erkennbar (nur Video-Verweis)",
 "sent": false
+},
+{
+"at": "2026-11-13T17:17:08+00:00",
+"rel": 1,
+"topic": "Unbekannt (nur Bildhinweis)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-08"
