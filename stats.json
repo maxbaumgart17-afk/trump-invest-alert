@@ -1,114 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-10-29T21:11:29+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-29T21:11:33+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-29T21:11:38+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Wahlempfehlung",
-"sent": false
-},
-{
-"at": "2026-10-29T21:11:42+00:00",
-"rel": 2,
-"topic": "Wahlkampf-Endorsement",
-"sent": false
-},
-{
-"at": "2026-10-29T21:11:45+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-29T21:11:49+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-29T21:11:53+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Endorsement",
-"sent": false
-},
-{
-"at": "2026-10-29T21:11:57+00:00",
-"rel": 3,
-"topic": "Geopolitik (Iran)",
-"sent": false
-},
-{
-"at": "2026-10-29T21:12:01+00:00",
-"rel": 2,
-"topic": "Geopolitik (Israel/Nahost)",
-"sent": false
-},
-{
-"at": "2026-10-29T21:12:04+00:00",
-"rel": 1,
-"topic": "Politik / persönlicher Angriff",
-"sent": false
-},
-{
-"at": "2026-10-29T21:12:07+00:00",
-"rel": 2,
-"topic": "Politik / Innenpolitik (Einwanderung, Strafverfolgung)",
-"sent": false
-},
-{
-"at": "2026-10-29T21:12:10+00:00",
-"rel": 2,
-"topic": "Politik / Russland-Ermittlungen (Retrospektive)",
-"sent": false
-},
-{
-"at": "2026-10-29T23:11:30+00:00",
-"rel": 2,
-"topic": "Politik / Justiz (Russland-Ermittlungen)",
-"sent": false
-},
-{
-"at": "2026-10-29T23:11:32+00:00",
-"rel": 1,
-"topic": "Wahlkampf",
-"sent": false
-},
-{
-"at": "2026-10-29T23:11:35+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Wahlaufruf",
-"sent": false
-},
-{
-"at": "2026-10-29T23:11:39+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-29T23:11:43+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Kongress-Endorsement",
-"sent": false
-},
-{
-"at": "2026-10-29T23:11:47+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
 "at": "2026-10-30T03:11:37+00:00",
 "rel": 2,
 "topic": "Politik / Russland-Ermittlungen (Rückblick)",
@@ -4072,6 +3964,18 @@
 "at": "2026-11-12T20:44:08+00:00",
 "rel": 2,
 "topic": "Politik / Korruptionsvorwürfe / Staatshaushalt",
+"sent": false
+},
+{
+"at": "2026-11-13T00:22:38+00:00",
+"rel": 1,
+"topic": "Persönlich / Lob (Medien-Interview)",
+"sent": false
+},
+{
+"at": "2026-11-13T00:22:45+00:00",
+"rel": 3,
+"topic": "Unternehmen / Pharma",
 "sent": false
 }
 ],
