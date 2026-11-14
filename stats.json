@@ -1,78 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-10-31T20:50:44+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Politik",
-"sent": false
-},
-{
-"at": "2026-10-31T20:50:47+00:00",
-"rel": 2,
-"topic": "Wahlkampf (Kongress-Endorsement Ohio 9)",
-"sent": false
-},
-{
-"at": "2026-10-31T20:50:50+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Politik (Florida)",
-"sent": false
-},
-{
-"at": "2026-10-31T20:50:59+00:00",
-"rel": 2,
-"topic": "Wahlkampf (Gouverneurswahl Florida)",
-"sent": false
-},
-{
-"at": "2026-10-31T20:51:02+00:00",
-"rel": 2,
-"topic": "Wahlkampf / Wahlempfehlung",
-"sent": false
-},
-{
-"at": "2026-10-31T20:51:04+00:00",
-"rel": 1,
-"topic": "Wahlkampf",
-"sent": false
-},
-{
-"at": "2026-10-31T20:51:09+00:00",
-"rel": 1,
-"topic": "Wahlkampf",
-"sent": false
-},
-{
-"at": "2026-10-31T20:51:12+00:00",
-"rel": 1,
-"topic": "Wahlkampf",
-"sent": false
-},
-{
-"at": "2026-10-31T20:51:15+00:00",
-"rel": 1,
-"topic": "Kein erkennbares Thema",
-"sent": false
-},
-{
-"at": "2026-10-31T20:51:18+00:00",
-"rel": 1,
-"topic": "Kein erkennbares Thema (nur Bildhinweis)",
-"sent": false
-},
-{
-"at": "2026-10-31T20:51:21+00:00",
-"rel": 1,
-"topic": "Kein erkennbares Thema",
-"sent": false
-},
-{
-"at": "2026-10-31T20:51:25+00:00",
-"rel": 2,
-"topic": "Wahlkampf-Endorsement",
-"sent": false
-},
-{
 "at": "2026-10-31T22:50:44+00:00",
 "rel": 2,
 "topic": "Wahlkampf / Kongress-Endorsement",
@@ -3190,6 +3118,48 @@
 "at": "2026-11-14T19:04:59+00:00",
 "rel": 1,
 "topic": "Wahlkampf / Persönliches",
+"sent": false
+},
+{
+"at": "2026-11-14T21:05:14+00:00",
+"rel": 1,
+"topic": "Unklar (nur Bilder, kein Text)",
+"sent": false
+},
+{
+"at": "2026-11-14T21:05:16+00:00",
+"rel": 1,
+"topic": "Sonstiges (Repost ohne Text)",
+"sent": false
+},
+{
+"at": "2026-11-14T21:05:19+00:00",
+"rel": 1,
+"topic": "Repost ohne eigenen Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-14T21:05:22+00:00",
+"rel": 1,
+"topic": "Sonstiges (Reposts ohne Text)",
+"sent": false
+},
+{
+"at": "2026-11-14T21:05:24+00:00",
+"rel": 1,
+"topic": "Kein Thema erkennbar (reiner Repost)",
+"sent": false
+},
+{
+"at": "2026-11-14T21:05:27+00:00",
+"rel": 1,
+"topic": "Reposts ohne eigenen Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-14T21:05:33+00:00",
+"rel": 2,
+"topic": "Infrastruktur / Golfplatz Washington D.C. (Innenministerium)",
 "sent": false
 }
 ],
