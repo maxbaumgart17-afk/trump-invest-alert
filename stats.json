@@ -1,18 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-01T04:50:06+00:00",
-"rel": 1,
-"topic": "Wahlkampf",
-"sent": false
-},
-{
-"at": "2026-11-01T04:50:08+00:00",
-"rel": 1,
-"topic": "Wahlkampf",
-"sent": false
-},
-{
 "at": "2026-11-01T16:50:43+00:00",
 "rel": 2,
 "topic": "Wahlkampf / Wahlempfehlung",
@@ -2812,6 +2800,30 @@
 "at": "2026-11-15T03:05:38+00:00",
 "rel": 1,
 "topic": "Unbekannt (nur Bild-Platzhalter)",
+"sent": false
+},
+{
+"at": "2026-11-15T15:05:38+00:00",
+"rel": 4,
+"topic": "Infrastruktur / Flugsicherung (FAA) / Staatsausgaben",
+"sent": false
+},
+{
+"at": "2026-11-15T15:05:44+00:00",
+"rel": 4,
+"topic": "Staatliche Aufträge / Infrastruktur (Flugsicherung)",
+"sent": false
+},
+{
+"at": "2026-11-15T15:05:47+00:00",
+"rel": 1,
+"topic": "Allgemein / Eigenlob",
+"sent": false
+},
+{
+"at": "2026-11-15T15:05:51+00:00",
+"rel": 2,
+"topic": "Golfplatz / Justiz / Innenministerium",
 "sent": false
 }
 ],
