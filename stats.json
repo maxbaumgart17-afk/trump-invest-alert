@@ -1,30 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-04T18:50:33+00:00",
-"rel": 1,
-"topic": "Kein Textinhalt",
-"sent": false
-},
-{
-"at": "2026-11-04T18:50:38+00:00",
-"rel": 4,
-"topic": "Börse / Aktienmarkt",
-"sent": false
-},
-{
-"at": "2026-11-05T00:50:53+00:00",
-"rel": 2,
-"topic": "Zeitumstellung (Sunshine Protection Act)",
-"sent": false
-},
-{
-"at": "2026-11-05T10:50:22+00:00",
-"rel": 1,
-"topic": "Unbekannt (kein Text, nur Bild)",
-"sent": false
-},
-{
 "at": "2026-11-05T15:23:38+00:00",
 "rel": 2,
 "topic": "Unbekannt (nur Link)",
@@ -784,6 +760,66 @@
 "at": "2026-11-18T08:39:26+00:00",
 "rel": 6,
 "topic": "Handelsabkommen / Landwirtschaft / Energie",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:20+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:22+00:00",
+"rel": 2,
+"topic": "Unklar (Repost ohne eigenen Text)",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:25+00:00",
+"rel": 1,
+"topic": "Sonstiges",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:27+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:30+00:00",
+"rel": 2,
+"topic": "Innenpolitik / Kongresswahlen",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:33+00:00",
+"rel": 1,
+"topic": "Unklar / kein Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:35+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:37+00:00",
+"rel": 1,
+"topic": "Kriminalität / Einwanderung (lokaler Verkehrsunfall)",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:42+00:00",
+"rel": 4,
+"topic": "Agrarpolitik / Farm Bill",
+"sent": false
+},
+{
+"at": "2026-11-19T13:53:44+00:00",
+"rel": 1,
+"topic": "Persönlich / Sport / Glückwunsch",
 "sent": false
 }
 ],
