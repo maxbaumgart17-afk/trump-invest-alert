@@ -1,18 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-05T15:23:38+00:00",
-"rel": 2,
-"topic": "Unbekannt (nur Link)",
-"sent": false
-},
-{
-"at": "2026-11-05T15:23:41+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Wahlergebnis",
-"sent": false
-},
-{
 "at": "2026-11-06T00:50:46+00:00",
 "rel": 3,
 "topic": "Börse / US-Aktienmarkt nach Wahl",
@@ -820,6 +808,18 @@
 "at": "2026-11-19T13:53:44+00:00",
 "rel": 1,
 "topic": "Persönlich / Sport / Glückwunsch",
+"sent": false
+},
+{
+"at": "2026-11-19T16:59:34+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-19T16:59:37+00:00",
+"rel": 2,
+"topic": "Sonstiges (Repost)",
 "sent": false
 }
 ],
