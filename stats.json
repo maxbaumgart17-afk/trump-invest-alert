@@ -887,6 +887,12 @@
 "rel": 2,
 "topic": "Medien / Politik",
 "sent": false
+},
+{
+"at": "2026-11-20T00:33:48+00:00",
+"rel": 1,
+"topic": "Kultur",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
