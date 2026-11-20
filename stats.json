@@ -1,24 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-06T00:50:46+00:00",
-"rel": 3,
-"topic": "Börse / US-Aktienmarkt nach Wahl",
-"sent": false
-},
-{
-"at": "2026-11-06T00:50:50+00:00",
-"rel": 3,
-"topic": "Börse / Politik (Wahlkampf-Rhetorik)",
-"sent": false
-},
-{
-"at": "2026-11-06T00:50:53+00:00",
-"rel": 1,
-"topic": "Wahlkampf / Persönliches",
-"sent": false
-},
-{
 "at": "2026-11-06T12:22:11+00:00",
 "rel": 3,
 "topic": "Geopolitik / Iran",
@@ -910,6 +892,12 @@
 "at": "2026-11-20T00:50:04+00:00",
 "rel": 1,
 "topic": "Politik / Personal (Regierung)",
+"sent": false
+},
+{
+"at": "2026-11-20T01:52:19+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
 "sent": false
 }
 ],
