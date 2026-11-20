@@ -899,6 +899,12 @@
 "rel": 4,
 "topic": "Konjunktur / Industrie (Reindustrialisierung)",
 "sent": false
+},
+{
+"at": "2026-11-20T00:48:59+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Inhalt)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
