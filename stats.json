@@ -1,18 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-06T12:22:11+00:00",
-"rel": 3,
-"topic": "Geopolitik / Iran",
-"sent": false
-},
-{
-"at": "2026-11-06T12:22:17+00:00",
-"rel": 5,
-"topic": "KI / Technologie-Infrastruktur",
-"sent": false
-},
-{
 "at": "2026-11-06T18:21:16+00:00",
 "rel": 2,
 "topic": "Wahlkampf / RNC-Vorsitz",
@@ -898,6 +886,12 @@
 "at": "2026-11-20T01:52:19+00:00",
 "rel": 1,
 "topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-20T13:05:26+00:00",
+"rel": 5,
+"topic": "Geopolitik / Diplomatie (China, Russland)",
 "sent": false
 }
 ],
