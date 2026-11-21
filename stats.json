@@ -983,6 +983,30 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema",
 "sent": false
+},
+{
+"at": "2026-11-21T21:21:50+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-21T21:21:53+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-21T21:21:56+00:00",
+"rel": 1,
+"topic": "Unbekannt (nur Bild)",
+"sent": false
+},
+{
+"at": "2026-11-21T21:22:00+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
