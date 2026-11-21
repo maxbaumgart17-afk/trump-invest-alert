@@ -947,6 +947,12 @@
 "rel": 1,
 "topic": "Unklar (nur Bild, kein Text)",
 "sent": false
+},
+{
+"at": "2026-11-21T21:04:23+00:00",
+"rel": 1,
+"topic": "Unklar (kein Textinhalt)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
