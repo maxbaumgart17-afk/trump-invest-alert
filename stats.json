@@ -893,6 +893,42 @@
 "rel": 1,
 "topic": "Sonstiges",
 "sent": false
+},
+{
+"at": "2026-11-21T20:58:48+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Textinhalt)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:58:52+00:00",
+"rel": 1,
+"topic": "Unbekannt (kein Textinhalt)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:58:55+00:00",
+"rel": 1,
+"topic": "Nicht bewertbar (nur Bild-Hinweis)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:58:59+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-21T20:59:01+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-21T20:59:05+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
