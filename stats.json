@@ -1,78 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-06T18:21:16+00:00",
-"rel": 2,
-"topic": "Wahlkampf / RNC-Vorsitz",
-"sent": false
-},
-{
-"at": "2026-11-06T18:21:22+00:00",
-"rel": 3,
-"topic": "Geopolitik / Iran / Nahost",
-"sent": false
-},
-{
-"at": "2026-11-06T20:21:46+00:00",
-"rel": 2,
-"topic": "Personalie (Weißes Haus)",
-"sent": false
-},
-{
-"at": "2026-11-07T04:21:20+00:00",
-"rel": 1,
-"topic": "Kein erkennbarer Inhalt",
-"sent": false
-},
-{
-"at": "2026-11-07T04:21:23+00:00",
-"rel": 1,
-"topic": "Sonstiges (kein Text)",
-"sent": false
-},
-{
-"at": "2026-11-07T04:21:26+00:00",
-"rel": 1,
-"topic": "Sonstiges (Repost ohne erkennbaren Inhalt)",
-"sent": false
-},
-{
-"at": "2026-11-07T16:21:56+00:00",
-"rel": 1,
-"topic": "Unklar (nur Bild-Link)",
-"sent": false
-},
-{
-"at": "2026-11-07T16:21:59+00:00",
-"rel": 2,
-"topic": "Unklar (Repost ohne erkennbaren Inhalt)",
-"sent": false
-},
-{
-"at": "2026-11-07T16:22:01+00:00",
-"rel": 1,
-"topic": "Kein Text (nur Bildhinweis)",
-"sent": false
-},
-{
-"at": "2026-11-07T18:22:17+00:00",
-"rel": 1,
-"topic": "Kein erkennbares Thema (Video-Link ohne Text)",
-"sent": false
-},
-{
-"at": "2026-11-07T18:22:20+00:00",
-"rel": 1,
-"topic": "Kein erkennbares Thema",
-"sent": false
-},
-{
-"at": "2026-11-07T18:22:24+00:00",
-"rel": 2,
-"topic": "Politik / Justiz (Wahlkampf-Rhetorik)",
-"sent": false
-},
-{
 "at": "2026-11-07T20:21:42+00:00",
 "rel": 2,
 "topic": "Personalie / Wahlkampf-Stil (keine Wirtschaftsbezug)",
@@ -892,6 +820,60 @@
 "at": "2026-11-20T13:05:26+00:00",
 "rel": 5,
 "topic": "Geopolitik / Diplomatie (China, Russland)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:25+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:28+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Bildhinweis)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:32+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:35+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Bildhinweis)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:38+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Bildhinweis)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:41+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (Bild-Post ohne Text)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:44+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:48+00:00",
+"rel": 1,
+"topic": "Kein Inhalt (Bild-Post)",
+"sent": false
+},
+{
+"at": "2026-11-21T20:20:51+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
 "sent": false
 }
 ],
