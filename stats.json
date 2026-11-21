@@ -953,6 +953,30 @@
 "rel": 1,
 "topic": "Unklar (kein Textinhalt)",
 "sent": false
+},
+{
+"at": "2026-11-21T21:10:28+00:00",
+"rel": 1,
+"topic": "Sonstiges / kein Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-21T21:10:32+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-21T21:10:35+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-21T21:10:39+00:00",
+"rel": 1,
+"topic": "Kein Inhalt erkennbar",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
