@@ -851,6 +851,24 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema",
 "sent": false
+},
+{
+"at": "2026-11-21T20:32:16+00:00",
+"rel": 1,
+"topic": "Kein Textinhalt",
+"sent": false
+},
+{
+"at": "2026-11-21T20:32:20+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-21T20:32:23+00:00",
+"rel": 1,
+"topic": "Nicht bewertbar (nur Bildhinweis)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
