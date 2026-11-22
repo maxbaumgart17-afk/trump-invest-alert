@@ -977,6 +977,42 @@
 "rel": 2,
 "topic": "Unklar (Repost ohne eigenen Text)",
 "sent": false
+},
+{
+"at": "2026-11-22T15:13:14+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-22T15:13:17+00:00",
+"rel": 2,
+"topic": "Repost ohne eigenen Text",
+"sent": false
+},
+{
+"at": "2026-11-22T15:13:19+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-11-22T15:13:22+00:00",
+"rel": 2,
+"topic": "Weiterleitung (RT) ohne erkennbaren Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-22T15:13:24+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-22T15:13:27+00:00",
+"rel": 2,
+"topic": "Repost ohne erkennbaren Inhalt",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
