@@ -1037,6 +1037,12 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema",
 "sent": false
+},
+{
+"at": "2026-11-22T20:57:38+00:00",
+"rel": 1,
+"topic": "Unklar (nur Bild)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
