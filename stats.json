@@ -1055,6 +1055,12 @@
 "rel": 6,
 "topic": "Energie/Ölpreis, Geopolitik (Iran), Aktienmarkt",
 "sent": false
+},
+{
+"at": "2026-11-22T21:50:59+00:00",
+"rel": 5,
+"topic": "Energie / Ölpreis",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
