@@ -1,12 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-08T14:22:44+00:00",
-"rel": 4,
-"topic": "Börse / US-Aktienmarkt nach Wahl",
-"sent": false
-},
-{
 "at": "2026-11-08T16:22:13+00:00",
 "rel": 1,
 "topic": "Unklar (Video ohne Text)",
@@ -970,6 +964,18 @@
 "at": "2026-11-22T13:47:51+00:00",
 "rel": 2,
 "topic": "Politik / Senat (persönlicher Angriff)",
+"sent": false
+},
+{
+"at": "2026-11-22T15:03:06+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Hinweis)",
+"sent": false
+},
+{
+"at": "2026-11-22T15:03:09+00:00",
+"rel": 2,
+"topic": "Unklar (Repost ohne eigenen Text)",
 "sent": false
 }
 ],
