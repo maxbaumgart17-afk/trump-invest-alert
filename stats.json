@@ -1013,6 +1013,18 @@
 "rel": 2,
 "topic": "Repost ohne erkennbaren Inhalt",
 "sent": false
+},
+{
+"at": "2026-11-22T15:22:33+00:00",
+"rel": 1,
+"topic": "Sonstiges / kein Textinhalt",
+"sent": false
+},
+{
+"at": "2026-11-22T15:22:36+00:00",
+"rel": 1,
+"topic": "Repost ohne eigenen Text",
+"sent": false
 }
 ],
 "last_summary": "2026-11-15"
