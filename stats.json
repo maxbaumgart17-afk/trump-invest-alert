@@ -1043,6 +1043,12 @@
 "rel": 1,
 "topic": "Unklar (nur Bild)",
 "sent": false
+},
+{
+"at": "2026-11-22T21:11:44+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Verweis)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
