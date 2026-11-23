@@ -1073,6 +1073,12 @@
 "rel": 6,
 "topic": "Unternehmen (NVIDIA), Exportkontrollen, Halbleiter",
 "sent": true
+},
+{
+"at": "2026-11-23T14:52:45+00:00",
+"rel": 4,
+"topic": "Unternehmen",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
