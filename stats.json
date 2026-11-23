@@ -1043,6 +1043,12 @@
 "rel": 4,
 "topic": "Unternehmen (Nvidia, Führungsfrage)",
 "sent": false
+},
+{
+"at": "2026-11-23T05:09:24+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Hinweis)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
