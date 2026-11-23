@@ -1079,6 +1079,12 @@
 "rel": 4,
 "topic": "Unternehmen",
 "sent": false
+},
+{
+"at": "2026-11-23T16:34:23+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Bildhinweis)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
