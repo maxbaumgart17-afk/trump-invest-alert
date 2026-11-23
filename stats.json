@@ -1055,6 +1055,24 @@
 "rel": 1,
 "topic": "Sonstiges (Repost ohne eigenen Text)",
 "sent": false
+},
+{
+"at": "2026-11-23T14:26:28+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Video-Link)",
+"sent": false
+},
+{
+"at": "2026-11-23T14:26:31+00:00",
+"rel": 2,
+"topic": "Retweet ohne erkennbaren Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-23T14:26:37+00:00",
+"rel": 6,
+"topic": "Unternehmen (NVIDIA), Exportkontrollen, Halbleiter",
+"sent": true
 }
 ],
 "last_summary": "2026-11-22"
