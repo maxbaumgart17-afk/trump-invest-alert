@@ -1049,6 +1049,12 @@
 "rel": 1,
 "topic": "Kein erkennbares Thema (nur Video-Hinweis)",
 "sent": false
+},
+{
+"at": "2026-11-23T05:10:29+00:00",
+"rel": 1,
+"topic": "Sonstiges (Repost ohne eigenen Text)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
