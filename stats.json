@@ -1,30 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-10T18:22:06+00:00",
-"rel": 1,
-"topic": "Personalie Justiz (Richternominierung)",
-"sent": false
-},
-{
-"at": "2026-11-10T18:22:09+00:00",
-"rel": 1,
-"topic": "Personalie / Justiz",
-"sent": false
-},
-{
-"at": "2026-11-10T18:22:12+00:00",
-"rel": 2,
-"topic": "Justiz / Personalie (Bundesrichter)",
-"sent": false
-},
-{
-"at": "2026-11-10T22:22:57+00:00",
-"rel": 1,
-"topic": "Sonstiges (kein Inhalt)",
-"sent": false
-},
-{
 "at": "2026-11-11T00:22:08+00:00",
 "rel": 3,
 "topic": "Politik / Verteidigung",
@@ -1054,6 +1030,12 @@
 "at": "2026-11-24T17:42:11+00:00",
 "rel": 1,
 "topic": "Personalie Justiz (Richternominierung)",
+"sent": false
+},
+{
+"at": "2026-11-24T22:36:14+00:00",
+"rel": 2,
+"topic": "Golfplatz / Bundesbehörden (Interior Department) / Justiz",
 "sent": false
 }
 ],
