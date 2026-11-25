@@ -1,12 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-11T20:22:49+00:00",
-"rel": 1,
-"topic": "Unklar (nur Bild)",
-"sent": false
-},
-{
 "at": "2026-11-12T12:56:19+00:00",
 "rel": 2,
 "topic": "Innenpolitik / Wahlkampf",
@@ -1042,6 +1036,12 @@
 "at": "2026-11-25T20:05:09+00:00",
 "rel": 1,
 "topic": "Lob / Persönlich (Armee in Iowa)",
+"sent": false
+},
+{
+"at": "2026-11-25T20:29:16+00:00",
+"rel": 1,
+"topic": "Politik / persönlicher Angriff",
 "sent": false
 }
 ],
