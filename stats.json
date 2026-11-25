@@ -1,18 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-11T18:22:22+00:00",
-"rel": 1,
-"topic": "Sonstiges (kein Text, nur Video-Verweis)",
-"sent": false
-},
-{
-"at": "2026-11-11T18:22:25+00:00",
-"rel": 1,
-"topic": "Sonstiges (kein Inhalt)",
-"sent": false
-},
-{
 "at": "2026-11-11T20:22:49+00:00",
 "rel": 1,
 "topic": "Unklar (nur Bild)",
@@ -1048,6 +1036,12 @@
 "at": "2026-11-25T17:15:36+00:00",
 "rel": 2,
 "topic": "Börse / Wahlkommentar",
+"sent": false
+},
+{
+"at": "2026-11-25T20:05:09+00:00",
+"rel": 1,
+"topic": "Lob / Persönlich (Armee in Iowa)",
 "sent": false
 }
 ],
