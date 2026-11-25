@@ -1,18 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-11T00:22:08+00:00",
-"rel": 3,
-"topic": "Politik / Verteidigung",
-"sent": false
-},
-{
-"at": "2026-11-11T00:22:12+00:00",
-"rel": 2,
-"topic": "Medien / Rechtsstreit (BBC)",
-"sent": false
-},
-{
 "at": "2026-11-11T08:22:11+00:00",
 "rel": 2,
 "topic": "Medien / Persönliche Angriffe",
@@ -1036,6 +1024,24 @@
 "at": "2026-11-24T22:36:14+00:00",
 "rel": 2,
 "topic": "Golfplatz / Bundesbehörden (Interior Department) / Justiz",
+"sent": false
+},
+{
+"at": "2026-11-25T00:59:29+00:00",
+"rel": 1,
+"topic": "Politik / persönlicher Angriff",
+"sent": false
+},
+{
+"at": "2026-11-25T00:59:31+00:00",
+"rel": 1,
+"topic": "Justiz / Kalifornien (Begnadigungen)",
+"sent": false
+},
+{
+"at": "2026-11-25T00:59:33+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Bildhinweis)",
 "sent": false
 }
 ],
