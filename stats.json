@@ -1049,6 +1049,12 @@
 "rel": 1,
 "topic": "Medien / Politik (CNN-Angriff)",
 "sent": false
+},
+{
+"at": "2026-11-26T05:13:59+00:00",
+"rel": 1,
+"topic": "Sonstiges (Persönliches/Politische Rhetorik)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
