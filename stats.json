@@ -1067,6 +1067,12 @@
 "rel": 1,
 "topic": "Unklar / kein Textinhalt",
 "sent": false
+},
+{
+"at": "2026-11-26T19:01:14+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein erkennbarer Inhalt)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
