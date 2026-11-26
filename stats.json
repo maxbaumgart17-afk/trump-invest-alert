@@ -1061,6 +1061,12 @@
 "rel": 3,
 "topic": "Konjunktur / Wirtschaftsdaten",
 "sent": false
+},
+{
+"at": "2026-11-26T18:41:08+00:00",
+"rel": 1,
+"topic": "Unklar / kein Textinhalt",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
