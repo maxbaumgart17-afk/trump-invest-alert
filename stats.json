@@ -1,12 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-12T20:44:08+00:00",
-"rel": 2,
-"topic": "Politik / Korruptionsvorwürfe / Staatshaushalt",
-"sent": false
-},
-{
 "at": "2026-11-13T00:22:38+00:00",
 "rel": 1,
 "topic": "Persönlich / Lob (Medien-Interview)",
@@ -1072,6 +1066,12 @@
 "at": "2026-11-26T19:01:14+00:00",
 "rel": 1,
 "topic": "Sonstiges (kein erkennbarer Inhalt)",
+"sent": false
+},
+{
+"at": "2026-11-26T21:30:28+00:00",
+"rel": 1,
+"topic": "Keine erkennbare Thematik (nur Bildhinweis)",
 "sent": false
 }
 ],
