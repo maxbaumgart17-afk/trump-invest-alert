@@ -1091,6 +1091,30 @@
 "rel": 1,
 "topic": "Kein Inhalt (nur Bild-Platzhalter)",
 "sent": false
+},
+{
+"at": "2026-11-27T20:07:28+00:00",
+"rel": 1,
+"topic": "Kein Inhalt (nur Bildhinweis)",
+"sent": false
+},
+{
+"at": "2026-11-27T20:07:30+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema",
+"sent": false
+},
+{
+"at": "2026-11-27T20:07:32+00:00",
+"rel": 1,
+"topic": "Kein Textinhalt",
+"sent": false
+},
+{
+"at": "2026-11-27T20:07:35+00:00",
+"rel": 1,
+"topic": "Sonstiges (kein Inhalt)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
