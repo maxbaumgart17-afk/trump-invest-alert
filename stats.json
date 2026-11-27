@@ -1,18 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-13T00:22:38+00:00",
-"rel": 1,
-"topic": "Persönlich / Lob (Medien-Interview)",
-"sent": false
-},
-{
-"at": "2026-11-13T00:22:45+00:00",
-"rel": 3,
-"topic": "Unternehmen / Pharma",
-"sent": false
-},
-{
 "at": "2026-11-13T13:04:48+00:00",
 "rel": 1,
 "topic": "Kein Thema erkennbar (nur Video-Verweis)",
@@ -1072,6 +1060,12 @@
 "at": "2026-11-26T21:30:28+00:00",
 "rel": 1,
 "topic": "Keine erkennbare Thematik (nur Bildhinweis)",
+"sent": false
+},
+{
+"at": "2026-11-27T10:44:49+00:00",
+"rel": 4,
+"topic": "Geopolitik / Öl und Energie (Irak)",
 "sent": false
 }
 ],
