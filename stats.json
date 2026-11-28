@@ -1,18 +1,6 @@
 {
 "posts": [
 {
-"at": "2026-11-13T23:05:25+00:00",
-"rel": 4,
-"topic": "Steuern / Filmindustrie (Medien)",
-"sent": false
-},
-{
-"at": "2026-11-13T23:05:28+00:00",
-"rel": 2,
-"topic": "Katastrophenschutz / Lob an Behörden",
-"sent": false
-},
-{
 "at": "2026-11-14T15:05:15+00:00",
 "rel": 1,
 "topic": "Justiz / Innenpolitik (Todesstrafe Kalifornien)",
@@ -1126,6 +1114,42 @@
 "at": "2026-11-27T22:04:53+00:00",
 "rel": 1,
 "topic": "Kein Textinhalt",
+"sent": false
+},
+{
+"at": "2026-11-28T14:23:50+00:00",
+"rel": 1,
+"topic": "Kein erkennbares Thema (nur Bildhinweis)",
+"sent": false
+},
+{
+"at": "2026-11-28T14:23:53+00:00",
+"rel": 1,
+"topic": "Kein erkennbarer Inhalt",
+"sent": false
+},
+{
+"at": "2026-11-28T14:23:55+00:00",
+"rel": 1,
+"topic": "Kein Inhalt (nur Bildhinweis)",
+"sent": false
+},
+{
+"at": "2026-11-28T14:23:58+00:00",
+"rel": 1,
+"topic": "Unbekannt (nur Bild)",
+"sent": false
+},
+{
+"at": "2026-11-28T14:24:01+00:00",
+"rel": 1,
+"topic": "Unklar (nur Bild-Hinweis)",
+"sent": false
+},
+{
+"at": "2026-11-28T14:24:04+00:00",
+"rel": 1,
+"topic": "Unklar (nur Bildhinweis, kein Text)",
 "sent": false
 }
 ],
