@@ -1151,6 +1151,12 @@
 "rel": 1,
 "topic": "Unklar (nur Bildhinweis, kein Text)",
 "sent": false
+},
+{
+"at": "2026-11-28T14:25:09+00:00",
+"rel": 2,
+"topic": "Golfprojekt / Gerichtsstreit (Potomac)",
+"sent": false
 }
 ],
 "last_summary": "2026-11-22"
